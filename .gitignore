@@ -1,0 +1,26 @@
+# macOS system files
+.DS_Store
+
+# Node modules (if using npm/yarn for dependencies)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Dependency caches
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build/Deployment files (if applicable)
+dist/
+build/
+*.log
+
+# SASS/SCSS cache files
+.sass-cache/
+
+# VS Code settings
+.vscode/
+
+# Env files (for secrets)
+.env

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - iOS Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="Gork.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70">
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#hero">[Your Name]</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Dark Mode Icon Toggle -->
+            <button class="btn mode-toggle ms-auto" id="modeToggle">
+                <i class="bi bi-sun-fill"></i> <!-- Sun for light mode -->
+                <i class="bi bi-moon-fill d-none"></i> <!-- Moon for dark mode, hidden by default -->
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="d-flex align-items-center justify-content-center text-center min-vh-100">
+        <div class="container">
+            <h1 class="display-1 fw-bold">Hi, I’m [Your Name]</h1>
+            <p class="lead text-muted">iOS Developer crafting seamless experiences</p>
+            <a href="#projects" class="btn btn-primary btn-lg mt-4 rounded-pill">See My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 text-center">
+        <div class="container">
+            <h2 class="fw-medium mb-4">About Me</h2>
+            <p class="col-md-8 mx-auto">I’m an iOS developer with a passion for building intuitive apps that fit perfectly into the Apple ecosystem. Experienced in Swift, SwiftUI, and UIKit.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light text-center">
+        <div class="container">
+            <h2 class="fw-medium mb-5">Projects</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 glassy-card">
+                        <img src="project1.png" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h3 class="card-title">App Name</h3>
+                            <p class="card-text">A brief description of your app.</p>
+                            <a href="#" class="btn btn-outline-primary rounded-pill">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Duplicate for more projects -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 glassy-card">
+                        <img src="project1.png" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h3 class="card-title">App Name</h3>
+                            <p class="card-text">A brief description of your app.</p>
+                            <a href="#" class="btn btn-outline-primary rounded-pill">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 glassy-card">
+                        <img src="project1.png" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h3 class="card-title">App Name</h3>
+                            <p class="card-text">A brief description of your app.</p>
+                            <a href="#" class="btn btn-outline-primary rounded-pill">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 text-center">
+        <div class="container">
+            <h2 class="fw-medium mb-4">Contact</h2>
+            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p>GitHub: <a href="#" target="_blank">yourgithub</a></p>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
