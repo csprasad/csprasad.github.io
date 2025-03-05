@@ -1,0 +1,47 @@
+/* About Page Styles */
+.about-page {
+    color: black;
+    background-color: white;
+    padding-top: 6rem; /*Start below the status bar */
+    overflow-y: auto; /* Enable scrolling */
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the left */
+    scrollbar-width: none; /* Hide scrollbar for firefox browser */
+  }
+
+    /* Hide scrollbar in WebKit browsers (Chrome, Safari) */
+    .about-page::-webkit-scrollbar {
+        display: none;
+      }
+  
+  .about-page h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 0; /* Reset margin-top */
+  }
+  
+  /* .about-page p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  } */
+
+  .about-page p {
+    font-size: 1rem;
+    line-height: 1.6; /* Slightly reduced line height */
+    margin-bottom: 1.5rem; /* Add spacing between paragraphs */
+    text-align: left; /* Left-align text to avoid uneven spacing */
+    max-width: 100%; /* Ensure text doesn't overflow */
+    color: #333; /* Slightly darker text for better contrast */
+    word-spacing: normal; /* Reset word spacing */
+  }
+  
+  .back-button {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+    padding-top: 25px;
+  }

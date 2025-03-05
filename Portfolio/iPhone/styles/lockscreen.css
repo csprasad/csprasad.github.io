@@ -1,0 +1,79 @@
+/* Lock Screen Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+.lock-screen {
+  background: linear-gradient(to bottom, #030509, #030a13); /* Blue-100 to Blue-200 */
+  border: 1px solid #000000; /* Black-300 */
+  border-radius: 2.5rem;
+  background-image: url('https://images.unsplash.com/photo-1620207418302-439b387441b0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTk4MTAxNTF8&ixlib=rb-4.0.3&q=85');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space between top and bottom content */
+  align-items: center;
+  padding-top: 3rem; /* Add padding to avoid overlap with status bar */
+  padding-bottom: 2rem; /* Add padding at the bottom */
+}
+
+.date {
+  font-size: 1rem;
+  color: white;
+  opacity: 0.6;
+  margin-top: 1rem;
+  font-weight: 400;
+}
+
+.time {
+  font-size: 5rem;
+  font-weight: bold;
+  color: white;
+  opacity: 0.6;
+  margin-top: 0.5rem;
+  font-family: 'Inter', sans-serif;
+}
+
+
+
+.swipe-indicator {
+  width: 5rem;
+  height: 0.2rem;
+  background-color: white;
+  opacity: 0.6;
+  border-radius: 9999px;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.swipe-indicator::after {
+  content: '';
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.unlocked .lock-screen {
+  transform: translateY(-100%);
+}
+
+.unlocked .home-screen {
+  transform: translateY(0);
+}
+
+.unlocked .time,
+.unlocked .date {
+  opacity: 0;
+}
+
+.unlocked .swipe-indicator::after {
+  opacity: 1;
+  transform: translate(4rem, -50%); /* Move the circle to the right */
+}

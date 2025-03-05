@@ -1,0 +1,210 @@
+/* General Styles */
+body {
+    background-color: #f3f4f6; /* Neutral-100 */
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Phone Container */
+  .phone-container {
+    width: 18rem;
+    height: 37rem;
+    background: linear-gradient(to bottom, #dbeafe, #bfdbfe); /* Blue-100 to Blue-200 */
+    border: 1px solid #93c5fd; /* Blue-300 */
+    border-radius: 3rem;
+    box-shadow: 1rem 1rem 6rem rgba(0, 0, 0, 0.4), 0 0 0.1rem rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .phone-screen {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 2.9rem;
+    padding: 0.5rem;
+  }
+  
+  /* Side Buttons */
+  .side-button {
+    width: 0.25rem;
+    height: 3rem;
+    background: linear-gradient(to right, #9ca3af, #bfdbfe, #bfdbfe); /* Neutral-400 to Blue-300 */
+    border-right: 1px solid #dbeafe; /* Blue-100 */
+    box-shadow: inset 2px 0 1px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    right: -0.25rem;
+  }
+  
+  .side-button.volume-up {
+    top: 20%;
+  }
+  
+  .side-button.volume-down {
+    top: 30%;
+  }
+  
+  .side-button.lock-button {
+    width: 0.25rem;
+    height: 4rem;
+    background: linear-gradient(to left, #9ca3af, #bfdbfe, #bfdbfe);
+    border-left: 1px solid #dbeafe;
+    left: -0.25rem;
+    top: 40%;
+  }
+  
+  /* Page Styles */
+  .page {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  /* Lock screen */
+  .lock-screen {
+    background-image: url('https://images.unsplash.com/photo-1620207418302-439b387441b0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTk4MTAxNTF8&ixlib=rb-4.0.3&q=85');
+  }
+  
+  /* Lock Screen Styles */
+  .camera-notch {
+    width: 5rem;
+    height: 1.4rem;
+    background-color: black;
+    border-radius: 9999px;
+    margin-top: 0.5rem;
+  }
+  
+  .date {
+    font-size: 1rem;
+    color: white;
+    opacity: 0.6;
+    margin-top: 2rem;
+    font-weight: 400;
+  }
+  
+  .time {
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+    opacity: 0.6;
+    margin-top: 1rem;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .swipe-indicator {
+    width: 5rem;
+    height: 0.2rem;
+    background-color: white;
+    opacity: 0.6;
+    border-radius: 9999px;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  .swipe-indicator::after {
+    content: '';
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
+  .unlocked .swipe-indicator::after {
+    opacity: 1;
+    transform: translate(4rem, -50%); /* Move the circle to the right */
+  }
+  
+  .home-screen {
+    background-image: url('../assets/images/wallpaper1.png');
+  }
+
+
+  
+  /* Widget Styles */
+  .widget {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+    width: 80%;
+  }
+  
+  .widget img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .widget h1 {
+    font-size: 1.5rem;
+    color: white;
+    margin: 0;
+    font-weight: 500;
+  }
+  
+  .widget p {
+    font-size: 1rem;
+    color: white;
+    opacity: 0.8;
+    margin: 0;
+  }
+  
+  /* Apps Grid */
+  .apps-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+    width: 80%;
+  }
+  
+  .app {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .app-icon {
+    width: 4rem;
+    height: 4rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .app-icon img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  .app span {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }

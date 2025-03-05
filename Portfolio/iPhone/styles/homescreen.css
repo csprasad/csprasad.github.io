@@ -1,0 +1,93 @@
+/* Home Screen Styles */
+.home-screen {
+    background: linear-gradient(to bottom, #030509, #030a13); /* Blue-100 to Blue-200 */
+    border: 1px solid #000000; /* Black-300 */
+    border-radius: 2.5rem;
+    background-image: url('../assets/images/wallpaper1.png');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+    align-items: center;
+    padding-top: 3rem; /* Add padding to avoid overlap with status bar */
+  }
+  
+  /* Widget Styles */
+  .widget {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Prevent overflow */
+}
+
+.widget img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.widget h1 {
+    font-size: 1.4rem;
+    color: white;
+    margin: 0;
+    font-weight: 500;
+    word-break: break-word; /* Handle long words */
+}
+
+.widget p {
+    font-size: 1rem;
+    color: white;
+    opacity: 0.8;
+    margin: 0;
+}
+  
+  /* Apps Grid */
+  .apps-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+    width: 80%;
+  }
+  
+  .app {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .app-icon {
+    width: 4rem;
+    height: 4rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .app-icon img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  .app span {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
