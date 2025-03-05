@@ -1,31 +1,33 @@
 /* Base Styles */
 body {
+    background: url('images/Hero-Bg.png') no-repeat center center fixed;
+    background-size: cover;
     font-family: 'SF Pro Display', 'Helvetica Neue', sans-serif;
-    background: #F5F5F7;
     color: #1D1D1F;
     scroll-behavior: smooth;
     transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* Dark Mode */
 body.dark {
-    background: #1D1D1F;
+    background: url('images/Hero-Bg.png') no-repeat center center fixed; /* Same image, adjust if needed */
+    background-size: cover;
     color: #F5F5F7;
 }
 
 /* Navbar */
 .navbar {
-    background: rgba(255, 255, 255, 0.95) !important;
-    backdrop-filter: blur(10px);
+    /* No default background here, rely on glassy classes */
 }
+
 body.dark .navbar {
-    background: rgba(29, 29, 31, 0.95) !important;
+    /* No default background here, rely on glassy classes */
 }
 
 .navbar-brand {
     font-weight: 600;
     color: #1D1D1F !important;
 }
+
 body.dark .navbar-brand {
     color: #F5F5F7 !important;
 }
@@ -35,6 +37,7 @@ body.dark .navbar-brand {
     font-weight: 500;
     padding: 0.5rem 1.5rem !important;
 }
+
 body.dark .nav-link {
     color: #F5F5F7 !important;
 }
@@ -44,12 +47,18 @@ body.dark .nav-link {
     color: #007AFF !important;
 }
 
+body.dark .nav-link:hover,
+body.dark .nav-link.active {
+    color: #66B2FF !important;
+}
+
 /* Hero */
 #hero {
-    background: linear-gradient(135deg, #F5F5F7, #E5E5EA);
+    /* No default background, rely on glassy classes */
 }
+
 body.dark #hero {
-    background: linear-gradient(135deg, #1D1D1F, #2C2C2E);
+    /* No default background, rely on glassy classes */
 }
 
 .display-1 {
@@ -57,6 +66,7 @@ body.dark #hero {
     letter-spacing: -0.02em;
     color: #1D1D1F;
 }
+
 body.dark .display-1 {
     color: #F5F5F7;
 }
@@ -65,6 +75,7 @@ body.dark .display-1 {
     font-size: 1.5rem;
     color: #6E6E73;
 }
+
 body.dark .lead {
     color: #D1D1D6 !important;
 }
@@ -76,21 +87,19 @@ body.dark .lead {
     color: white;
     transition: background 0.3s ease;
 }
+
 .btn-primary:hover {
     background: #005BB5;
 }
 
 /* Projects */
 #projects {
-    background-image: url('project1.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 5rem 0;
+    /* No default background, rely on glassy classes */
     position: relative;
 }
+
 body.dark #projects {
-    background: linear-gradient(135deg, #2C2C2E, #1D1D1F, #3A3B3C);
+    /* No default background, rely on glassy classes */
 }
 
 #projects::before {
@@ -103,6 +112,7 @@ body.dark #projects {
     background: rgba(0, 0, 0, 0.1);
     z-index: 1;
 }
+
 body.dark #projects::before {
     background: rgba(0, 0, 0, 0.3);
 }
@@ -110,6 +120,15 @@ body.dark #projects::before {
 #projects .container {
     position: relative;
     z-index: 2;
+}
+
+/* Contact */
+#contact {
+    /* No default background, rely on glassy classes */
+}
+
+body.dark #contact {
+    /* No default background, rely on glassy classes */
 }
 
 /* Glassy Cards */
@@ -122,10 +141,12 @@ body.dark #projects::before {
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 body.dark .glassy-card {
     background: rgba(29, 29, 31, 0.7);
     border: 1px solid rgba(245, 245, 247, 0.2);
 }
+
 .glassy-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
@@ -146,6 +167,7 @@ body.dark .glassy-card {
 .glassy-card .card-title {
     color: #1D1D1F;
 }
+
 body.dark .glassy-card .card-title {
     color: #F5F5F7;
 }
@@ -153,6 +175,7 @@ body.dark .glassy-card .card-title {
 .glassy-card .card-text {
     color: #6E6E73;
 }
+
 body.dark .glassy-card .card-text {
     color: #D1D1D6;
 }
@@ -161,47 +184,64 @@ body.dark .glassy-card .card-text {
     border-color: #007AFF;
     color: #007AFF;
 }
+
 body.dark .glassy-card .btn-outline-primary {
     border-color: #66B2FF;
     color: #66B2FF;
 }
+
 .glassy-card .btn-outline-primary:hover {
     background: #007AFF;
     color: white;
 }
 
-@supports not (backdrop-filter: blur(15px)) {
-    .glassy-card {
-        background: rgba(245, 245, 247, 0.9);
-    }
-    body.dark .glassy-card {
-        background: rgba(29, 29, 31, 0.9);
-    }
+/* Form Styling */
+.form-control {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: #1D1D1F;
+    padding: 0.75rem;
 }
 
-/* Typography */
-h2 {
-    font-size: 2.25rem;
-    font-weight: 500;
-    color: #1D1D1F;
-}
-body.dark h2 {
+body.dark .form-control {
+    background: rgba(50, 50, 50, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     color: #F5F5F7;
 }
 
-p {
-    font-size: 1.1rem;
-    color: #1D1D1F;
+.form-control::placeholder {
+    color: #6E6E73;
 }
-body.dark p {
+
+body.dark .form-control::placeholder {
+    color: #D1D1D6;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-icon {
+    font-size: 1.75rem;
+    color: #1D1D1F;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+body.dark .social-icon {
     color: #F5F5F7;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .display-1 { font-size: 3rem; }
-    .lead { font-size: 1.25rem; }
-    .nav-link { padding: 0.5rem 1rem !important; }
+.social-icon:hover {
+    color: #007AFF;
+}
+
+body.dark .social-icon:hover {
+    color: #66B2FF;
 }
 
 /* Mode Toggle Button */
@@ -213,14 +253,48 @@ body.dark p {
     color: #1D1D1F;
     transition: color 0.3s ease;
 }
+
 body.dark .mode-toggle {
     color: #F5F5F7;
 }
+
 .mode-toggle:hover {
     color: #007AFF;
 }
 
-/* Ensure icons stack correctly */
-.mode-toggle i {
+body.dark .mode-toggle:hover {
+    color: #66B2FF;
+}
+
+.mode-icon {
     display: inline-block;
+}
+
+/* Glassy View Classes */
+.glassy-light {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+.glassy-dark {
+    background: rgba(29, 29, 31, 0.6);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+@supports not (backdrop-filter: blur(15px)) {
+    .glassy-light {
+        background: rgba(245, 245, 247, 0.9);
+    }
+    .glassy-dark {
+        background: rgba(29, 29, 31, 0.9);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .display-1 { font-size: 3rem; }
+    .lead { font-size: 1.25rem; }
+    .nav-link { padding: 0.5rem 1rem !important; }
 }
