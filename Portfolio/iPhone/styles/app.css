@@ -11,7 +11,14 @@
     justify-content: flex-start; /* Align content to the top */
     align-items: flex-start; /* Align content to the left */
     padding-top: 3rem; /* Add padding to avoid overlap with status bar */
+    overflow-y: auto; /* Enable scrolling */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
   }
+
+  /* Hide scrollbar in WebKit browsers (Chrome, Safari) */
+.app-page::-webkit-scrollbar {
+  display: none;
+}
   
   .app-page h2 {
     font-size: 1.5rem;

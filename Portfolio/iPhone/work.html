@@ -7,8 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles/shared.css">
   <link rel="stylesheet" href="styles/app.css">
-  <!-- Import Inter font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/work.css">
 </head>
 <body>
   <div class="phone-container">
@@ -26,19 +25,84 @@
 
       <!-- Work Page -->
       <div class="page app-page">
+      <div class="widget">
         <a href="home.html" class="back-button">←</a>
         <h2>Work Experience</h2>
-        <p>Here are some details about my work experience:</p>
-        <ul>
-          <li>Company A - Software Engineer (2020-2022)</li>
-          <li>Company B - Frontend Developer (2018-2020)</li>
-          <li>Freelance - Web Designer (2016-2018)</li>
-        </ul>
+        <p>Tap a location to view details.</p>
+      </div>
+        
+        <!-- Markers on Background Map -->
+          <!-- <div class="map-marker" style="top: 43%; left: 26%;" 
+          data-company="Purplesense Digital Solutions" 
+          data-role="iOS Developer" 
+          data-duration="Aug 2018 - Aug 2019" 
+          data-description="Developed scalable web applications using React and Node.js.
+          Developed scalable web applications using React and Node.js
+          Developed scalable web applications using React and Node.js
+          Developed scalable web applications using React and Node.js
+          Developed scalable web applications using React and Node.js
+          Developed scalable web applications using React and Node.js
+          Developed scalable web applications using React and Node.js
+          Developed scalable web applications using React and Node.js
+          Developed scalable web applications using React and Node.js">
+          <div class="marker-title">Purplesense Digital</div>
+          <div class="marker-pin"></div>
+    </div>
+
+
+          <div class="map-marker" style="top: 60%; left: 50%;" 
+          data-company="ABC Corp" 
+          data-role="Intern" 
+          data-duration="Jun 2019 - Dec 2019" 
+          data-description="Assisted in building REST APIs and debugging front-end issues.">
+          <div class="marker-title">Medinin Labs</div>
+          <div class="marker-pin"></div>
+          </div>
+
+          <div class="map-marker" style="top: 90%; left: 20%;" 
+          data-company="ABC Corp" 
+          data-role="Intern" 
+          data-duration="Jun 2019 - Dec 2019" 
+          data-description="Assisted in building REST APIs and debugging front-end issues.">
+          <div class="marker-title">Offshore india</div>
+          <div class="marker-pin"></div>
+          </div> -->
+
+          <!-- Popup for Details -->
+<div class="popup-overlay" id="popup-overlay"></div>
+
+<!-- Popup (Inside iPhone) -->
+<div class="popup" id="popup">
+  <span class="close-popup">&times;</span>
+  <h2 id="popup-company"></h2>
+  <p id="popup-role"></p>
+  <p id="popup-duration"></p>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-circle"></div>
+      <p>Roles & Responsibilities:</p>
+      <ul id="popup-responsibilities"></ul>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-circle"></div>
+      <p>Projects Worked On:</p>
+      <ul id="popup-projects"></ul>
+    </div>
+  </div>
+</div>
+
+          
+
+
+
+
+
       </div>
     </div>
   </div>
 
-  <!-- Include Central JavaScript -->
-  <!-- <script src="scripts.js"></script> -->
+  <!-- Include JavaScript -->
+  <script src="scripts/work.js"></script>
 </body>
 </html>

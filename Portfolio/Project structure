@@ -1,0 +1,26 @@
+portfolio/
+├── images/
+│   ├── background-images/ (contains all background images)
+├── iPhone/
+│   ├── assets/
+│   │   ├── icons/ (contains all icons needed for iPhone mock)
+│   │   ├── images/ (contains all images needed for iPhone mock)
+│   ├── index.html
+│   ├── home.html
+│   ├── work.html
+│   ├── projects.html
+│   ├── about.html
+│   ├── contact.html
+│   ├── styles/
+│   │   ├── lockscreen.css
+│   │   ├── homescreen.css
+│   │   ├── about.css
+│   │   ├── contact.css
+│   │   ├── project.css
+│   │   ├── work.css
+│   │   ├── app.css (common styles for work, projects, contact, about)
+│   │   ├── shared.css (global styles for iPhone and iPhone containers)
+│   ├── script.js
+├── mac/ (folder with all Mac mock files)
+├── visionPro/ (folder with all Vision Pro files)
+├── README.md

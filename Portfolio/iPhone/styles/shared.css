@@ -1,7 +1,12 @@
 /* Shared Styles */
+/* shared.css */
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+
 body {
   background-color: #f3f4f6; /* Neutral-100 */
-  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
