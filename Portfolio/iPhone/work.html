@@ -8,8 +8,6 @@
   <link rel="stylesheet" href="styles/shared.css">
   <link rel="stylesheet" href="styles/app.css">
   <link rel="stylesheet" href="styles/work.css">
-  <!-- Import Inter font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="phone-container">
@@ -27,74 +25,84 @@
 
       <!-- Work Page -->
       <div class="page app-page">
+      <div class="widget">
         <a href="home.html" class="back-button">←</a>
         <h2>Work Experience</h2>
         <p>Tap a location to view details.</p>
-          
-         <!-- Map Container -->
-        <div class="map-container">
-          <img src="../iPhone/assets/images/cityMap.png" alt="Work Locations Map" class="map-image">
-          
-          <!-- Markers -->
-          <div class="map-marker" style="top: 40%; left: 30%;" data-company="XYZ Company" data-role="Software Engineer" data-duration="Jan 2020 - Present" data-description="Developed scalable web applications using React and Node.js."></div>
-          <div class="map-marker" style="top: 60%; left: 50%;" data-company="ABC Corp" data-role="Intern" data-duration="Jun 2019 - Dec 2019" data-description="Assisted in building REST APIs and debugging front-end issues."></div>
-        </div>
-      
-        <!-- Popup for Details -->
-        <div class="popup-overlay" id="popup-overlay"></div>
-          <div class="popup" id="popup">
-            <div class="popup-content">
-              <span class="close-popup">&times;</span>
-              <h3 id="popup-company"></h3>
-              <p id="popup-role"></p>
-              <p id="popup-duration"></p>
-              <p id="popup-description"></p>
-            </div>
+      </div>
+        
+        <!-- Markers on Background Map -->
+          <!-- <div class="map-marker" style="top: 43%; left: 26%;" 
+          data-company="Purplesense Digital Solutions" 
+          data-role="iOS Developer" 
+          data-duration="Aug 2018 - Aug 2019" 
+          data-description="Developed scalable web applications using React and Node.js.
+          Developed scalable web applications using React and Node.js
+          Developed scalable web applications using React and Node.js
+          Developed scalable web applications using React and Node.js
+          Developed scalable web applications using React and Node.js
+          Developed scalable web applications using React and Node.js
+          Developed scalable web applications using React and Node.js
+          Developed scalable web applications using React and Node.js
+          Developed scalable web applications using React and Node.js">
+          <div class="marker-title">Purplesense Digital</div>
+          <div class="marker-pin"></div>
+    </div>
+
+
+          <div class="map-marker" style="top: 60%; left: 50%;" 
+          data-company="ABC Corp" 
+          data-role="Intern" 
+          data-duration="Jun 2019 - Dec 2019" 
+          data-description="Assisted in building REST APIs and debugging front-end issues.">
+          <div class="marker-title">Medinin Labs</div>
+          <div class="marker-pin"></div>
           </div>
+
+          <div class="map-marker" style="top: 90%; left: 20%;" 
+          data-company="ABC Corp" 
+          data-role="Intern" 
+          data-duration="Jun 2019 - Dec 2019" 
+          data-description="Assisted in building REST APIs and debugging front-end issues.">
+          <div class="marker-title">Offshore india</div>
+          <div class="marker-pin"></div>
+          </div> -->
+
+          <!-- Popup for Details -->
+<div class="popup-overlay" id="popup-overlay"></div>
+
+<!-- Popup (Inside iPhone) -->
+<div class="popup" id="popup">
+  <span class="close-popup">&times;</span>
+  <h2 id="popup-company"></h2>
+  <p id="popup-role"></p>
+  <p id="popup-duration"></p>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-circle"></div>
+      <p>Roles & Responsibilities:</p>
+      <ul id="popup-responsibilities"></ul>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-circle"></div>
+      <p>Projects Worked On:</p>
+      <ul id="popup-projects"></ul>
+    </div>
+  </div>
+</div>
+
+          
+
+
+
 
 
       </div>
     </div>
   </div>
 
-  <!-- Include Central JavaScript -->
-  <!-- <script src="scripts.js"></script> -->
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const markers = document.querySelectorAll(".map-marker");
-      const popup = document.getElementById("popup");
-      const popupOverlay = document.getElementById("popup-overlay");
-      const popupCompany = document.getElementById("popup-company");
-      const popupRole = document.getElementById("popup-role");
-      const popupDuration = document.getElementById("popup-duration");
-      const popupDescription = document.getElementById("popup-description");
-      const closePopup = document.querySelector(".close-popup");
-
-      markers.forEach(marker => {
-        marker.addEventListener("click", (event) => {
-          event.stopPropagation();
-          popupCompany.textContent = marker.getAttribute("data-company");
-          popupRole.textContent = marker.getAttribute("data-role");
-          popupDuration.textContent = marker.getAttribute("data-duration");
-          popupDescription.textContent = marker.getAttribute("data-description");
-          popup.style.display = "block";
-          popupOverlay.style.display = "block";
-        });
-      });
-
-      closePopup.addEventListener("click", () => {
-        popup.style.display = "none";
-        popupOverlay.style.display = "none";
-      });
-
-      popupOverlay.addEventListener("click", () => {
-        popup.style.display = "none";
-        popupOverlay.style.display = "none";
-      });
-    });
-  </script>
+  <!-- Include JavaScript -->
+  <script src="scripts/work.js"></script>
 </body>
-
-
 </html>
