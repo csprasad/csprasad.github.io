@@ -3,7 +3,7 @@
     background: linear-gradient(to bottom, #030509, #030a13); /* Blue-100 to Blue-200 */
     border: 1px solid #000000; /* Black-300 */
     border-radius: 2.5rem;
-    background-image: url('../assets/images/wallpaper1.png');
+    background-image: url('../assets/images/iPhone-15.webp');
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -25,7 +25,7 @@
     padding: 1rem;
     text-align: center;
     margin-top: 1rem;
-    width: 85%;
+    width: 95%;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft iOS-like shadow */
 }
 
@@ -49,9 +49,45 @@
     font-size: 1rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.8);
-    margin: 0;
+    margin-top: 1rem;
     letter-spacing: 0.5px;
+    text-align: right;
 }
+
+/* Home widget container */
+.home-widget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+
+/* Animation for the text */
+#container {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 1px;
+  display: inline-block; /* Keeps the text in place */
+}
+
+#cursor {
+  color: #fff;
+  font-weight: normal;
+  animation: blink-caret 0.8s step-end infinite; /* Blinking effect */
+}
+
+@keyframes blink-caret {
+  50% {
+     opacity: 0;
+  }
+}
+
 
   
 /* Apps Grid - Stick to Bottom */
@@ -67,8 +103,8 @@
   position: absolute;
   bottom: 1.2rem;
   padding: 0.6rem;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(0px);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
   border-radius: 2rem;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
   text-decoration: none !important;
@@ -105,7 +141,7 @@
 
 /* Icon Styling */
 .app-icon i {
-  font-size: 1.8rem; /* Adjusted to fit inside smaller icons */
+  font-size: 1.3rem; /* Adjusted to fit inside smaller icons */
   color: white;
 }
 

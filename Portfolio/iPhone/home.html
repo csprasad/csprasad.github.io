@@ -28,9 +28,15 @@
         <!-- Widget -->
         <div class="widget">
           <div class="widget-content">
-            <img src="assets/images/project1.jpg" alt="Your Picture">
-            <h1>Jhon Doe</h1>
-            <p>iOS Developer</p>
+            <img src="assets/images/profile.jpg" alt="Your Picture">
+            <div class="home-widget">
+              <div id="container">
+                <span id="animated-text"></span><span id="cursor">|</span>
+             </div>
+            </div>
+            <p>I am an iOS Developer with 5+ years of experience, 
+              passionate about creating seamless user experiences 
+              and solving complex technical challenges</p>
           </div>
         </div>
 
@@ -74,6 +80,55 @@
       </div>
     </div>
   </div>
+
+  <script>
+const textElement = document.getElementById("animated-text");
+const cursorElement = document.getElementById("cursor");
+const line1 = "Hi, I'm";
+const line2 = "Brahmendraprasad.";
+
+let fullText = line1 + "\n" + line2; // Combine both lines as a single string for consistent cursor position
+
+let typingIndex = 0; // Track position in the full text
+let deletingIndex = fullText.length; // Track deletion position
+
+function typeText() {
+   if (typingIndex < fullText.length) {
+      let textToDisplay = fullText.substring(0, typingIndex + 1); // Add one character at a time
+
+      // Insert the line break at the correct position for two lines
+      textToDisplay = textToDisplay.replace("\n", "<br>");
+
+      textElement.innerHTML = textToDisplay;
+      typingIndex++;
+
+      setTimeout(typeText, 300); // Slow typing (300ms delay per character)
+   } else {
+      setTimeout(deleteText, 10000); // Wait 30 seconds before starting to delete
+   }
+}
+
+function deleteText() {
+   if (deletingIndex > 0) {
+      let textToDisplay = fullText.substring(0, deletingIndex - 1); // Remove one character at a time
+
+      // Insert the line break at the correct position for two lines
+      textToDisplay = textToDisplay.replace("\n", "<br>");
+
+      textElement.innerHTML = textToDisplay;
+      deletingIndex--;
+
+      setTimeout(deleteText, 100); // Fast deletion (100ms delay per character)
+   } else {
+      typingIndex = 0; // Reset typing index
+      deletingIndex = fullText.length; // Reset deletion index
+      setTimeout(typeText, 500); // Restart typing after a short delay (500ms)
+   }
+}
+
+typeText(); // Start the animation
+
+  </script>
 
 </body>
 </html>

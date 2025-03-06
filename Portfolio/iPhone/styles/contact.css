@@ -1,0 +1,131 @@
+/* Styling for the contact container within the .contact-page */
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--bg-color, #fff); /* Dark/light mode background */
+}
+
+.contact-page a {
+    color: inherit; /* Inherit color from parent, ensuring links don’t appear blue */
+    text-decoration: none !important; /* Remove underlines if needed */
+}
+
+.contact-page a:hover {
+    color: #007bff; /* You can change this to any color you like *//* Optional: Add underline on hover */
+}
+
+/* Contact Section Header */
+.contact-page h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    text-align: left; /* Aligns text to the left */
+    width: 100%;
+}
+
+/* Contact Description Text */
+.contact-page p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #666;
+    text-align: right;
+}
+
+/* Styling for each contact item (email, resume, etc.) */
+.contact-item {
+    margin: 5px 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* Email Link Styling */
+.contact-page .contact-link {
+    font-size: 18px;
+    text-decoration: none; /* Remove underline */
+    color: #333;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s;
+    padding: 8px 15px;
+}
+
+/* Email link hover color */
+.contact-page .contact-link:hover {
+    color: #007bff; /* Hover color for email link */
+}
+
+/* Resume Button Styling */
+.contact-page .resume-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    gap: 10px;
+    text-decoration: none; /* Ensure no underline */
+}
+
+/* Resume Button Hover Styling */
+.contact-page .resume-btn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Social Media Icons (interactive) */
+.contact-page .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.contact-page .social-icon {
+    font-size: 30px;
+    transition: transform 0.3s;
+    color: #333;
+    text-decoration: none; /* Remove underline */
+}
+
+/* Hover effect for social media icons */
+.contact-page .social-icon:hover {
+    transform: scale(1.2); /* Icon enlarges slightly on hover */
+    color: #007bff; /* Hover color for social icons */
+}
+
+/* Back Button (no hover effect) */
+.contact-page .back-button {
+    color: #333;
+    font-size: 18px;
+    text-decoration: none; /* Remove underline */
+}
+
+.contact-page .back-button:hover {
+    color: #333; /* Ensure no hover effect on back button */
+}
+
+/* Avoid hover effect on all other non-interactive text */
+.contact-page p,
+.contact-page h2 {
+    text-decoration: none; /* Ensure no underline on any text */
+}
+
+@media screen and (max-width: 600px) {
+    .contact-page {
+        padding: 10px;
+    }
+
+    .contact-link, .resume-btn {
+        font-size: 16px;
+    }
+
+    .social-links {
+        flex-direction: column;
+    }
+}
