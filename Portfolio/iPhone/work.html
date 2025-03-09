@@ -28,76 +28,32 @@
       <div class="widget">
         <a href="home.html" class="back-button">←</a>
         <h2>Work Experience</h2>
-        <p>Tap a location to view details.</p>
+        <p>Tap a marker to view details.</p>
       </div>
-        
-        <!-- Markers on Background Map -->
-          <!-- <div class="map-marker" style="top: 43%; left: 26%;" 
-          data-company="Purplesense Digital Solutions" 
-          data-role="iOS Developer" 
-          data-duration="Aug 2018 - Aug 2019" 
-          data-description="Developed scalable web applications using React and Node.js.
-          Developed scalable web applications using React and Node.js
-          Developed scalable web applications using React and Node.js
-          Developed scalable web applications using React and Node.js
-          Developed scalable web applications using React and Node.js
-          Developed scalable web applications using React and Node.js
-          Developed scalable web applications using React and Node.js
-          Developed scalable web applications using React and Node.js
-          Developed scalable web applications using React and Node.js">
-          <div class="marker-title">Purplesense Digital</div>
-          <div class="marker-pin"></div>
-    </div>
-
-
-          <div class="map-marker" style="top: 60%; left: 50%;" 
-          data-company="ABC Corp" 
-          data-role="Intern" 
-          data-duration="Jun 2019 - Dec 2019" 
-          data-description="Assisted in building REST APIs and debugging front-end issues.">
-          <div class="marker-title">Medinin Labs</div>
-          <div class="marker-pin"></div>
-          </div>
-
-          <div class="map-marker" style="top: 90%; left: 20%;" 
-          data-company="ABC Corp" 
-          data-role="Intern" 
-          data-duration="Jun 2019 - Dec 2019" 
-          data-description="Assisted in building REST APIs and debugging front-end issues.">
-          <div class="marker-title">Offshore india</div>
-          <div class="marker-pin"></div>
-          </div> -->
 
           <!-- Popup for Details -->
-<div class="popup-overlay" id="popup-overlay"></div>
+      <div class="popup-overlay" id="popup-overlay"></div>
 
-<!-- Popup (Inside iPhone) -->
-<div class="popup" id="popup">
-  <span class="close-popup">&times;</span>
-  <h2 id="popup-company"></h2>
-  <p id="popup-role"></p>
-  <p id="popup-duration"></p>
+      <!-- Popup (Inside iPhone) -->
+      <div class="popup" id="popup">
+        <span class="close-popup">&times;</span>
+        <h3 id="popup-company"></h3>
+        <p id="popup-role"></p>
+        <p id="popup-duration"></p>
 
-  <div class="timeline">
-    <div class="timeline-item">
-      <div class="timeline-circle"></div>
-      <p>Roles & Responsibilities:</p>
-      <ul id="popup-responsibilities"></ul>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-circle"></div>
-      <p>Projects Worked On:</p>
-      <ul id="popup-projects"></ul>
-    </div>
-  </div>
-</div>
-
-          
-
-
-
-
-
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-circle"></div>
+            <strong>Roles & Responsibilities:</strong>
+            <ul id="popup-responsibilities"></ul>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-circle"></div>
+            <strong>Projects Worked On:</strong>
+            <ul id="popup-projects"></ul>
+          </div>
+        </div>
+      </div>
       </div>
     </div>
   </div>
