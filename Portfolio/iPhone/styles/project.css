@@ -1,0 +1,188 @@
+/* Card Container */
+.card-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 2rem;
+    justify-content: center;
+    overflow-y: none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .card-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Glassmorphism Card */
+  /* Glassmorphism Card */
+.glass-card {
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 95%; /* Smaller width for iPhone container */
+    height: 50%; /* Fixed height for consistency */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Card Image */
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images cover the area */
+    position: absolute; /* Position image absolutely */
+    top: 0;
+    left: 0;
+    z-index: 1; /* Place image below the overlay */
+  }
+  
+  /* Glassy Overlay */
+  .card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8)); /* Glassy gradient */
+    backdrop-filter: blur(0px);
+    z-index: 2; /* Place overlay above the image */
+    border-radius: 0 0 15px 15px; /* Match card border radius */
+    transition: background 0.3s ease; /* Smooth transition for overlay */
+  }
+  
+  /* Ensure overlay doesn't change on hover */
+  .glass-card:hover .card-overlay {
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8));
+  }
+  
+  /* Card Content */
+  .card-content {
+    color: black; /* White text for contrast */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .card-title {
+    margin: 0;
+    font-size: 0.8rem; /* Smaller font size for iPhone */
+    font-weight: bold; /* Bold title */
+  }
+  
+  .card-description {
+    margin: 5px 0 0;
+    font-size: 0.5rem; /* Smaller font size for iPhone */
+    color: black; /* Slightly transparent text */
+  }
+  
+  /* Modal Overlay */
+  .modal-overlay {
+    position: absolute; /* Change from fixed to absolute */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    border-radius: 3rem; /* Match iPhone container border radius */
+  }
+  
+  .modal-overlay.active {
+    display: flex;
+  }
+  
+  /* Modal */
+  .modal {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px; /* Smaller modal for iPhone */
+    max-height: 80vh; /* Constrain height */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .modal-header h2 {
+    margin: 0;
+    font-size: 1.5rem; /* Smaller font size for iPhone */
+  }
+  
+  .close-modal {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .modal-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px;
+  }
+  
+  /* Scrollable Images */
+  .scrollable-images {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    margin-bottom: 15px;
+  }
+  
+  .scrollable-images img {
+    scroll-snap-align: start;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    flex-shrink: 0;
+  }
+  
+  /* Hide Scrollbar */
+  .scrollable-images::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Project Details */
+  .project-details {
+    padding: 15px 0;
+  }
+  
+  .project-details h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem; /* Smaller font size for iPhone */
+  }
+  
+  .project-details p {
+    margin: 0;
+    font-size: 0.9rem; /* Smaller font size for iPhone */
+    line-height: 1.5;
+    color: #555;
+  }
