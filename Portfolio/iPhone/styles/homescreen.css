@@ -3,91 +3,158 @@
     background: linear-gradient(to bottom, #030509, #030a13); /* Blue-100 to Blue-200 */
     border: 1px solid #000000; /* Black-300 */
     border-radius: 2.5rem;
-    background-image: url('../assets/images/wallpaper1.png');
+    background-image: url('../assets/images/iPhone-15.webp');
     background-size: cover;
     background-position: center;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Align content to the top */
+    justify-content: space-between; /* Align content to the top */
     align-items: center;
     padding-top: 3rem; /* Add padding to avoid overlap with status bar */
+    padding-bottom: 2rem;
+    position: relative;
+      text-decoration: none !important; /* Force remove underline */
   }
   
   /* Widget Styles */
   .widget {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.15); /* Softer blur effect */
+    backdrop-filter: blur(20px); /* Increase blur for a frosted glass effect */
+    border-radius: 1.5rem; /* More rounded like Apple’s design */
     padding: 1rem;
     text-align: center;
-    margin-top: 2rem;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden; /* Prevent overflow */
+    margin-top: 1rem;
+    width: 95%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft iOS-like shadow */
 }
 
 .widget img {
-    width: 6rem;
-    height: 6rem;
-    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 0 0 50% 50%;
+    border: 3px solid rgba(255, 255, 255, 0.3);
     margin-bottom: 1rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
 .widget h1 {
-    font-size: 1.4rem;
+    font-size: 1.6rem; /* More iOS-like */
+    font-weight: 600;
     color: white;
     margin: 0;
-    font-weight: 500;
-    word-break: break-word; /* Handle long words */
 }
 
 .widget p {
     font-size: 1rem;
-    color: white;
-    opacity: 0.8;
-    margin: 0;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 1rem;
+    letter-spacing: 0.5px;
+    text-align: right;
 }
-  
-  /* Apps Grid */
-  .apps-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    margin-top: 2rem;
-    width: 80%;
+
+/* Home widget container */
+.home-widget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+
+/* Animation for the text */
+#container {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 1px;
+  display: inline-block; /* Keeps the text in place */
+}
+
+#cursor {
+  color: #fff;
+  font-weight: normal;
+  animation: blink-caret 0.8s step-end infinite; /* Blinking effect */
+}
+
+@keyframes blink-caret {
+  50% {
+     opacity: 0;
   }
+}
+
+
   
-  .app {
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .app-icon {
-    width: 4rem;
-    height: 4rem;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0.5rem;
-  }
-  
-  .app-icon img {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-  
-  .app span {
-    font-size: 0.9rem;
-    font-weight: 500;
-  }
+/* Apps Grid - Stick to Bottom */
+
+/* Rounded Dock Background */
+/* iOS-style App Dock */
+/* iOS-style App Dock (Adjusted for Better Fit) */
+.app-dock {
+  width: 95%;
+  /* max-width: 320px; */
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 1.2rem;
+  padding: 0.6rem;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  border-radius: 2rem;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  text-decoration: none !important;
+}
+
+/* Apps Grid Inside Dock */
+.apps-grid {
+  display: flex;
+  gap: 0.6rem;
+}
+
+/* Individual App Icons (Smaller to Fit Better) */
+.app-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Adjusted iOS-style Gradient Backgrounds */
+.app:nth-child(1) .app-icon { background: linear-gradient(to bottom, #5AC8FA, #007AFF); } /* Blue */
+.app:nth-child(2) .app-icon { background: linear-gradient(to bottom, #30D158, #34C759); } /* Green */
+.app:nth-child(3) .app-icon { background: linear-gradient(to bottom, #FF9500, #FFCC00); } /* Orange */
+.app:nth-child(4) .app-icon { background: linear-gradient(to bottom, #FF3B30, #FF453A); } /* Red */
+
+/* App Icon Hover Effect */
+.app-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Icon Styling */
+.app-icon i {
+  font-size: 1.3rem; /* Adjusted to fit inside smaller icons */
+  color: white;
+}
+
+.app span {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  display: block; /* Ensures it takes full width under the icon */
+  margin-top: 0.3rem;
+}
+
+a {
+  text-decoration: none !important;
+}
+

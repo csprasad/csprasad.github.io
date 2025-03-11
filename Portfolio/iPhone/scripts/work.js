@@ -31,7 +31,7 @@ const workExperiences = [
             "Built a mobile application for digital marketing analytics.",
             "Developed a real-time chat feature within the iOS app."
         ],
-        position: { top: "42%", left: "37%" }
+        position: { top: "90%", left: "55%" }
     },
     {
         company: "Medinin Labs",
@@ -49,7 +49,7 @@ const workExperiences = [
             "Redesigned the user onboarding experience for better engagement.",
             "Developed an internal tool for healthcare professionals to track patient data."
         ],
-        position: { top: "62.5%", left: "72%" }
+        position: { top: "60%", left: "30%" }
     },
     {
         company: "Offshore India",
@@ -67,7 +67,7 @@ const workExperiences = [
             "Developed a customer management dashboard with real-time analytics.",
             "Implemented a notification system for an internal task management platform."
         ],
-        position: { top: "90%", left: "20%" }
+        position: { top: "42%", left: "72%" }
     }
 ];
 

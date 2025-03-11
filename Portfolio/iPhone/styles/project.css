@@ -1,0 +1,57 @@
+.phone-container .page .app-page {
+  margin: 0px !important;
+}
+
+.app-container {
+  max-width: 260px;
+  background: white;
+  padding: 15px;
+  margin-top: 2rem;
+  padding-left: 0px !important;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+.app-header {
+  display: flex;
+  align-items: top;
+  gap: 0.5rem;
+}
+.app-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+}
+.app-name {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.app-header i {
+  margin-left: auto;
+  color: #007AFF;
+  width: 1rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.screenshot-container {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+.screenshot-container img {
+  width: 100px;
+  height: 200px;
+  border-radius: 10px;
+}
+.full-screenshot {
+  width: 100%;
+  border-radius: 15px;
+}
+
+
+/**********************************
+Project Details Page (below) - project-details.css
+**********************************/

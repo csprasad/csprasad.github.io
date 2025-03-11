@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/shared.css">
+  <link rel="stylesheet" href="styles/app.css">
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f7;
+    }
+    .container {
+        max-width: 600px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .project-header {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+    .app-icon {
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+    }
+    .app-info {
+        flex: 1;
+    }
+    .app-name {
+        margin: 0;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .open-button {
+        background-color: #007AFF;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    .screenshots {
+        margin-top: 20px;
+    }
+    .screenshot-gallery {
+        display: flex;
+        overflow-x: auto;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+    .screenshot-gallery img {
+        width: 200px;
+        height: 400px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    .app-details {
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+</style>
+</head>
+<body>
+  <div class="phone-container">
+    <!-- Side Buttons -->
+    <div class="side-button volume-up"></div>
+    <div class="side-button volume-down"></div>
+    <div class="side-button lock-button"></div>
+
+    <!-- Phone Screen -->
+    <div class="phone-screen">
+      <!-- Status Bar -->
+      <div class="status-bar">
+        <div class="island"></div>
+      </div>
+
+      <!-- Projects Page -->
+      <div class="page app-page">
+        <a href="home.html" class="back-button">←</a>
+
+        <!-- Section container of projects starts -->
+        <div class="container">
+            <!-- Header Section -->
+            <header class="project-header">
+                <img src="app-icon.png" alt="App Icon" class="app-icon">
+                <div class="app-info">
+                    <h1 class="app-name">Amazon Web Services</h1>
+                    <button class="open-button">Open</button>
+                </div>
+            </header>
+            
+            <!-- Screenshot Section -->
+            <section class="screenshots">
+                <h2>Screenshots</h2>
+                <div class="screenshot-gallery">
+                    <img src="screenshot1.png" alt="Screenshot">
+                    <img src="screenshot2.png" alt="Screenshot">
+                    <img src="screenshot3.png" alt="Screenshot">
+                    <img src="screenshot4.png" alt="Screenshot">
+                    <img src="screenshot5.png" alt="Screenshot">
+                    <img src="screenshot6.png" alt="Screenshot">
+                </div>
+            </section>
+    
+            <!-- App Details Section -->
+            <section class="app-details">
+                <h2>About This App</h2>
+                <p>
+                    Amazon Web Services (AWS) provides scalable cloud computing solutions. Develop, deploy, and scale applications efficiently using AWS services.
+                </p>
+            </section>
+        </div>
+        <!-- Section container of projects ends -->
+
+        <!-- Modal  -->
+        
+
+        <!-- Add more modals as needed -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Include Central JavaScript -->
+  <script src="scripts/project.js"></script>
+</body>
+</html>

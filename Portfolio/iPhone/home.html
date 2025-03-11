@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>iPhone Mockup - Home Screen</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="styles/shared.css">
   <link rel="stylesheet" href="styles/homescreen.css">
 </head>
@@ -28,43 +29,104 @@
         <div class="widget">
           <div class="widget-content">
             <img src="assets/images/profile.jpg" alt="Your Picture">
-            <h1>Brahmendraprasad</h1>
-            <p>iOS Developer</p>
+            <div class="home-widget">
+              <div id="container">
+                <span id="animated-text"></span><span id="cursor">|</span>
+             </div>
+            </div>
+            <p>I am an iOS Developer with 5+ years of experience in building innovative mobile applications.</p>
           </div>
         </div>
 
         <!-- Apps Grid -->
-        <div class="apps-grid">
-          <a href="about.html" class="app">
-            <div class="app-icon">
-              <img src="assets/icons/about.png" alt="About">
-            </div>
-            <span>About</span>
-          </a>
-          <a href="work.html" class="app">
-            <div class="app-icon">
-              <img src="assets/icons/work.png" alt="Work">
-            </div>
-            <span>Work</span>
-          </a>
-          <a href="projects.html" class="app">
-            <div class="app-icon">
-              <img src="assets/icons/projects.png" alt="Projects">
-            </div>
-            <span>Projects</span>
-          </a>
-          <a href="contact.html" class="app">
-            <div class="app-icon">
-              <img src="assets/icons/contact.png" alt="Contact">
-            </div>
-            <span>Contact</span>
-          </a>
-        </div>
+        <!-- App Dock with Rounded Background -->
+<!-- App Dock with Rounded Background -->
+<div class="app-dock">
+  <div class="apps-grid">
+    <a href="about.html" class="app">
+      <div class="app-icon">
+        <i class="fa-solid fa-user"></i> <!-- About Icon -->
+      </div>
+      <span>About</span>
+    </a>
+    <a href="work.html" class="app">
+      <div class="app-icon">
+        <i class="fa-solid fa-briefcase"></i> <!-- Work Icon -->
+      </div>
+      <span>Work</span>
+    </a>
+    <a href="projects.html" class="app">
+      <div class="app-icon">
+        <i class="fa-solid fa-code"></i> <!-- Projects Icon -->
+      </div>
+      <span>Projects</span>
+    </a>
+    <a href="contact.html" class="app">
+      <div class="app-icon">
+        <i class="fa-solid fa-envelope"></i> <!-- Contact Icon -->
+      </div>
+      <span>Contact</span>
+    </a>
+  </div>
+</div>
+
+
+      
+
+
+
       </div>
     </div>
   </div>
 
-  <!-- Include Central JavaScript -->
-  <!-- <script src="scripts.js"></script> -->
+  <script>
+const textElement = document.getElementById("animated-text");
+const cursorElement = document.getElementById("cursor");
+const line1 = "Hi, I'm";
+const line2 = "Brahmendraprasad.";
+
+let fullText = line1 + "\n" + line2; // Combine both lines as a single string for consistent cursor position
+
+let typingIndex = 0; // Track position in the full text
+let deletingIndex = fullText.length; // Track deletion position
+
+function typeText() {
+   if (typingIndex < fullText.length) {
+      let textToDisplay = fullText.substring(0, typingIndex + 1); // Add one character at a time
+
+      // Insert the line break at the correct position for two lines
+      textToDisplay = textToDisplay.replace("\n", "<br>");
+
+      textElement.innerHTML = textToDisplay;
+      typingIndex++;
+
+      setTimeout(typeText, 300); // Slow typing (300ms delay per character)
+   } else {
+      setTimeout(deleteText, 10000); // Wait 30 seconds before starting to delete
+   }
+}
+
+function deleteText() {
+   if (deletingIndex > 0) {
+      let textToDisplay = fullText.substring(0, deletingIndex - 1); // Remove one character at a time
+
+      // Insert the line break at the correct position for two lines
+      textToDisplay = textToDisplay.replace("\n", "<br>");
+
+      textElement.innerHTML = textToDisplay;
+      deletingIndex--;
+
+      setTimeout(deleteText, 100); // Fast deletion (100ms delay per character)
+   } else {
+      typingIndex = 0; // Reset typing index
+      deletingIndex = fullText.length; // Reset deletion index
+      setTimeout(typeText, 500); // Restart typing after a short delay (500ms)
+   }
+}
+
+typeText(); // Start the animation
+
+  </script>
+
 </body>
 </html>
