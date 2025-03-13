@@ -1,57 +1,88 @@
-.phone-container .page .app-page {
-  margin: 0px !important;
-}
-
-.app-container {
-  max-width: 260px;
-  background: white;
-  padding: 15px;
-  margin-top: 2rem;
-  padding-left: 0px !important;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
-}
-.app-header {
-  display: flex;
-  align-items: top;
-  gap: 0.5rem;
-}
-.app-icon {
-  width: 60px;
-  height: 60px;
-  border-radius: 15px;
-}
-.app-name {
-  font-size: 0.8rem;
-  font-weight: 600;
-}
-.app-header i {
-  margin-left: auto;
-  color: #007AFF;
-  width: 1rem;
-  height: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-.screenshot-container {
-  display: flex;
-  gap: 10px;
-  overflow-x: auto;
-  padding: 10px 0;
-}
-.screenshot-container img {
-  width: 100px;
-  height: 200px;
-  border-radius: 10px;
-}
-.full-screenshot {
-  width: 100%;
-  border-radius: 15px;
-}
 
 
 /**********************************
-Project Details Page (below) - project-details.css
+Project Details Page (below) - projects Card swipe css
 **********************************/
+
+
+.list-section {
+  /* padding: 20px; */
+  /* max-width: 600px; */
+  margin: 0;
+}
+
+.list-section h2 {
+  font-size: 1rem;
+  color: #1d1d1f;
+  margin-bottom: 0;
+}
+
+.app-list {
+  /* list-style-type: none; */
+  /* padding: 0; */
+}
+
+.list-item {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #ccc; /* Separator line */
+}
+
+.list-item:last-child {
+    border-bottom: none; /* Remove separator from the last card */
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Gradient background for depth */
+  box-shadow: 
+    0 4px 6px rgba(0, 0, 0, 0.1),
+    inset 0 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+/* .list-icon img {
+  width: 60; 
+  height: 60; 
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2)); 
+} */
+
+
+.list-info {
+  flex-grow: 1;
+}
+
+.list-name {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: #1d1d1f;
+  display: block;
+  vertical-align: top;
+}
+
+.list-type {
+  font-size: 0.6rem;
+  color: #6e6e73;
+  display: block;
+}
+
+.list-button {
+  background-color: rgb(0, 0, 0, 0.1);
+  color: #007aff;
+  border: none;
+  border-radius: 15px;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.list-button:hover {
+  background-color: #005bb5;
+  color: #fff;
+}

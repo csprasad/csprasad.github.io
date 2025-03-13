@@ -57,16 +57,17 @@
 
     /* Widget Styles */
     .widget {
-        background: rgba(1, 1, 1, 0.2);
-        backdrop-filter: blur(2px);
-        border-radius: 1rem;
-        padding: 1rem;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden; 
+      background: rgba(1, 1, 1, 0.2);
+      backdrop-filter: blur(2px);
+      border-radius: 1rem;
+      padding: 0;
+      width: 100%;
+      height: 70px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden; 
     }
     .widget a {
         padding: 0;
@@ -75,7 +76,7 @@
     .widget h2 {
         font-size: 1.2rem;
         color: black;
-        margin-top: 20;
+        margin: 1rem 0 0 20px;
         font-weight: bold;
         word-break: break-word; /* Handle long words */
     }
@@ -84,7 +85,7 @@
         font-size: 0.8rem;
         color: black;
         opacity: 0.8;
-        margin: 0;
+        margin-left: 1.5rem;
     }
   
  /* Popup covering 60% of the screen */
