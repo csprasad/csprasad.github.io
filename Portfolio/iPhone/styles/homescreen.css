@@ -39,7 +39,7 @@
 }
 
 .widget h1 {
-    font-size: 1.6rem; /* More iOS-like */
+    font-size: 1.6rem;
     font-weight: 600;
     color: white;
     margin: 0;
@@ -51,7 +51,7 @@
     color: rgba(255, 255, 255, 0.8);
     margin-top: 1rem;
     letter-spacing: 0.5px;
-    text-align: right;
+    text-align: center;
 }
 
 /* Home widget container */
@@ -66,27 +66,6 @@
   text-align: center;
 }
 
-/* Animation for the text */
-#container {
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff;
-  font-family: 'Arial', sans-serif;
-  letter-spacing: 1px;
-  display: inline-block; /* Keeps the text in place */
-}
-
-#cursor {
-  color: #fff;
-  font-weight: normal;
-  animation: blink-caret 0.8s step-end infinite; /* Blinking effect */
-}
-
-@keyframes blink-caret {
-  50% {
-     opacity: 0;
-  }
-}
 
 
   
@@ -127,6 +106,7 @@
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
+
 /* Adjusted iOS-style Gradient Backgrounds */
 .app:nth-child(1) .app-icon { background: linear-gradient(to bottom, #5AC8FA, #007AFF); } /* Blue */
 .app:nth-child(2) .app-icon { background: linear-gradient(to bottom, #30D158, #34C759); } /* Green */
@@ -158,3 +138,106 @@ a {
   text-decoration: none !important;
 }
 
+
+
+
+/************************
+Home screen name effect
+************************/
+
+:root {  
+   --purple: #D39D55; /* #DEAA79; */
+  --violet: #F6F0F0;
+  --pink: #EFDCAB;
+}
+
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+  
+  to {
+    background-position: -200% center;
+  }
+}
+
+@keyframes scale {
+  from, to {
+    transform: scale(0);
+  }
+  
+  50% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+/* body {
+  background-color: rgb(10, 10, 10);
+  display: grid;
+  height: 100vh;
+  margin: 0px;
+  overflow: hidden;
+  place-items: center;
+} */
+
+h1 {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-size: clamp(2em, 2vw, 4em);
+  font-weight: 400;
+  margin: 0px;
+  /* padding: 20px; */
+  text-align: center;
+}
+
+h1 > .magic {
+  display: inline-block;
+  position: relative;
+}
+
+h1 > .magic > .magic-star {
+  --size: clamp(20px, 1.5vw, 30px);
+  
+  animation: scale 700ms ease forwards;
+  display: block;
+  height: var(--size);
+  left: var(--star-left);
+  position: absolute;
+  top: var(--star-top);
+  width: var(--size);
+}
+
+h1 > .magic > .magic-star > svg {
+  animation: rotate 1000ms linear infinite;
+  display: block;
+  opacity: 0.7;
+}
+
+h1 > .magic > .magic-star > svg > path {
+  fill: var(--violet);
+}
+
+h1 > .magic > .magic-text {
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--purple),
+    var(--violet),
+    var(--pink),
+    var(--purple)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}

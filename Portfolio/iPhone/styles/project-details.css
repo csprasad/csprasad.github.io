@@ -1,0 +1,83 @@
+
+  .app-container {
+    max-width: 240px;
+    margin-top: 2rem;
+    width: 100%; 
+  }
+
+  .app-header {
+    display: flex;
+    align-items: top;
+    gap: 0.5rem;
+  }
+
+  .app-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Gradient background for depth */
+    box-shadow: 
+      0 4px 6px rgba(0, 0, 0, 0.1),
+      inset 0 1px 2px rgba(255, 255, 255, 0.5);
+  }
+  
+  .screenshot-container {
+    display: flex;
+    gap: 5px;
+    overflow-x: auto;
+    padding: 10px 0;
+  }
+  
+  .screenshot-container img {
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    flex-shrink: 0; 
+  }
+
+  .app-info {
+    flex-grow: 0.5;
+  }
+
+  .app-name {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: #1d1d1f;
+    display: block;
+    vertical-align: top;
+  }
+  
+  .app-category {
+    font-size: 0.6rem;
+    color: #6e6e73;
+    display: block;
+    padding: 0;
+  }
+  
+  .app-rating {
+    padding: 0;
+    font-size: 0.6rem;
+    color: #f39c12;
+  }
+ 
+  .description-container {
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .Action-button-container .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007aff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+  }
