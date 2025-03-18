@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles/dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Left Panel: Name & Details -->
+        <div class="left-panel">
+            <nav class="side">
+                <div class="side__inner">
+                    <div class="top"><a href="#">Brahmendraprasad</a></div>
+                    <div class="bottom">
+                        <a href="https://github.com/csprasad">GitHub</a>
+                        <a href="https://twitter.com/prasadcarlozz">LinkedIn</a>
+                        <a href="mailto:codealligator.csprasad@gmail.com">EMAIL ME</a>
+                    </div>
+                </div>
+            </nav>
+
+            <section class="section section--hello" id="hello">
+                <div class="section__inner">
+                    <div class="block">
+                        <h2>Hi, I'm Brahmendraprasad 👋</h2>
+                        <span>I am an iOS Developer with 5+ years of experience in building innovative mobile applications. 
+                            My passion lies in creating seamless user experiences and solving complex technical challenges.</span>
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Middle Panel: OS Selector -->
+        <div class="middle-panel">
+            <button class="os-btn" data-platform="iPhone">iPhone</button>
+            <button class="os-btn" data-platform="MacOS">macOS</button>
+            <button class="os-btn" data-platform="VisionPro">visionOS</button>
+            <button class="os-btn" data-platform="TabOS">TabOS</button>
+        </div>
+
+        <!-- Right Panel: Dynamic Screen Display -->
+        <div class="right-panel">
+            <iframe id="os-display" src="../iPhone/index.html" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <script src="scripts/dashboard.js"></script>
+</body>
+</html>
