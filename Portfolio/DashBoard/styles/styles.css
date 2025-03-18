@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Default: Mobile View - Centered iPhone */
+.iphone-mock {
+    display: flex;
+    justify-content: center;
+}
+
+.intro-text {
+    display: none; /* Hide text on small screens */
+}
+
+/* Larger Screens - iPhone Right, Text Left */
+@media (min-width: 1024px) {
+    .container {
+        justify-content: space-between;
+    }
+    
+    .intro-text {
+        display: block;
+        width: 40%;
+    }
+
+    .iphone-mock {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .iphone-mock img {
+        max-width: 100%;
+        height: auto;
+    }
+}

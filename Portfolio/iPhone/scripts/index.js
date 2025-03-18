@@ -53,3 +53,33 @@ function handleSwipe(startY, currentY) {
   
   // Initialize swipe gestures when the page loads
   document.addEventListener('DOMContentLoaded', initSwipeGestures);
+
+
+  // Fetch real time & date
+  function updateDateTime() {
+    const dateElement = document.getElementById("date");
+    const timeElement = document.getElementById("time");
+
+    const now = new Date();
+
+    // Format date as "Friday, August 12"
+    const options = { weekday: 'long', month: 'long', day: 'numeric' };
+    const formattedDate = now.toLocaleDateString('en-US', options);
+
+    // Format time as "17:00"
+    const formattedTime = now.toLocaleTimeString('en-US', { 
+        hour: '2-digit', 
+        minute: '2-digit',
+        hour12: false 
+    });
+
+    // Update the elements
+    dateElement.textContent = formattedDate;
+    timeElement.textContent = formattedTime;
+}
+
+// Update immediately when the page loads
+updateDateTime();
+
+// Update time every minute
+setInterval(updateDateTime, 60000);
