@@ -1,0 +1,357 @@
+{
+    "profile": {
+      "name": "Brahmendraprasad",
+      "alias": "CSPrasad",
+      "bio": "",
+      "intro": "iOS Developer | DevLint Creator | Passionate about Clean Code",
+      "job_role": "iOS Developer",
+      "location": "Hyderabad",
+      "profile_picture": "../iPhone/assets/images/profile.jpg",
+      "website": "",
+      "social_links": {
+        "github": "",
+        "linkedin": "",
+        "twitter": "",
+        "portfolio": ""
+      },
+      "skills": [
+        "Swift",
+        "Objective-C",
+        "SwiftUI",
+        "UIKit",
+        "CoreData",
+        "Combine",
+        "MVVM Architecture",
+        "Networking (URLSession, Alamofire)",
+        "Concurrency (GCD, Operations, async/await)",
+        "AutoLayout & Constraints",
+        "Unit & UI Testing (XCTest, XCTest UI)"
+      ],
+      "programming_languages": [
+        "Swift",
+        "Objective-C",
+        "JavaScript",
+        "Python"
+      ],
+      "markup_languages": [
+        "HTML",
+        "CSS",
+        "Markdown"
+      ],
+      "spoken_languages": [
+        "Kannada", "Hindi", "English"
+      ],
+      "tech_stack": [
+        "Xcode", "SwiftLint", "SwiftFormat", "Git", "Fastlane"
+      ],
+      "workflow": "I follow a clean and maintainable code structure using MVVM architecture, ensuring scalability and efficiency in iOS development. I believe in test-driven development and writing reusable components.",
+      "hobbies": [
+        "Reading tech blogs",
+        "Contributing to open-source",
+        "Experimenting with new iOS frameworks",
+        "Gaming"
+      ]
+    },
+    "experience": {
+        "map_bg_image": "../iPhone/assets/images/Map-iOS.png",
+        "marker_image": "url-to-marker-image",
+        "companies": [
+            {
+                "company": "India",
+                "role": "Software Developer",
+                "duration": "Jun 2019 - Dec 2019",
+                "company_website": "",
+                "tech_stack": ["React", "Node.js", "MongoDB", "Express.js", "Redux"],
+                "responsibilities": [
+                    "Developed scalable web applications using React and Node.js.",
+                    "Assisted in designing database schemas for optimized query performance.",
+                    "Built reusable React components to streamline frontend development.",
+                    "Integrated REST APIs into web applications and handled authentication mechanisms.",
+                    "Performed code reviews and collaborated with team members for best practices.",
+                    "Worked on debugging and performance optimization of JavaScript applications."
+                ],
+                "projects": [
+                    "Developed a customer management dashboard with real-time analytics.",
+                    "Implemented a notification system for an internal task management platform."
+                ],
+                "achievements": [
+                    "Optimized database queries, reducing response time by 40%.",
+                    "Improved frontend performance, cutting load times by 30%."
+                ],
+                "position": { "top": "90%", "left": "55%" }
+            },
+            {
+                "company": "India",
+                "role": "Software Developer Intern",
+                "duration": "Jun 2019 - Dec 2019",
+                "company_website": "",
+                "tech_stack": ["React", "Node.js", "MongoDB", "Express.js", "Redux"],
+                "responsibilities": [
+                    "Developed scalable web applications using React and Node.js.",
+                    "Assisted in designing database schemas for optimized query performance.",
+                    "Built reusable React components to streamline frontend development.",
+                    "Integrated REST APIs into web applications and handled authentication mechanisms.",
+                    "Performed code reviews and collaborated with team members for best practices.",
+                    "Worked on debugging and performance optimization of JavaScript applications."
+                ],
+                "projects": [
+                    "Developed a customer management dashboard with real-time analytics.",
+                    "Implemented a notification system for an internal task management platform."
+                ],
+                "achievements": [
+                    "Optimized database queries, reducing response time by 40%.",
+                    "Improved frontend performance, cutting load times by 30%."
+                ],
+                "position": { "top": "60%", "left": "30%" }
+            },
+            {
+                "company": "India",
+                "role": "Software Developer Intern",
+                "duration": "Jun 2019 - Dec 2019",
+                "company_website": "",
+                "tech_stack": ["React", "Node.js", "MongoDB", "Express.js", "Redux"],
+                "responsibilities": [
+                    "Developed scalable web applications using React and Node.js.",
+                    "Assisted in designing database schemas for optimized query performance.",
+                    "Built reusable React components to streamline frontend development.",
+                    "Integrated REST APIs into web applications and handled authentication mechanisms.",
+                    "Performed code reviews and collaborated with team members for best practices.",
+                    "Worked on debugging and performance optimization of JavaScript applications."
+                ],
+                "projects": [
+                    "Developed a customer management dashboard with real-time analytics.",
+                    "Implemented a notification system for an internal task management platform."
+                ],
+                "achievements": [
+                    "Optimized database queries, reducing response time by 40%.",
+                    "Improved frontend performance, cutting load times by 30%."
+                ],
+                "position": { "top": "42%", "left": "72%" }
+            }
+        ]
+    },
+    "apps": {
+        "macOS_apps": [
+            {
+                "app_id": "1",
+                "name": "DevLint",
+                "platform": "macOS",
+                "category": "Developer Tools",
+                "icon": "assets/images/Projects/DevLint/DevLint.png",
+                "rating": 4.5,
+                "screenshots": ["assets/images/Projects/Buildworks/Buildworks-01.jpg", 
+                "assets/images/Projects/Buildworks/Buildworks-02.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-03.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-04.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-05.jpg", 
+                "assets/images/Projects/Buildworks/Buildworks-06.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-07.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-08.jpg"],
+                "description": "A lightweight macOS app for formatting, linting, and correcting Swift syntax.",
+                "app_store_link": "#",
+                "total_downloads": "10K+",
+                "size": "15MB"
+            }
+        ],
+        "iOS_apps": [
+            {
+                "app_id": "2",
+                "name": "Buildworks",
+                "platform": "iOS",
+                "category": "Productivity, Business & Utilities",
+                "icon": "assets/images/Projects/Buildworks/Buildworks.png",
+                "rating": 4.2,
+                "screenshots": ["assets/images/Projects/Buildworks/Buildworks-01.jpg", 
+                "assets/images/Projects/Buildworks/Buildworks-02.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-03.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-04.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-05.jpg", 
+                "assets/images/Projects/Buildworks/Buildworks-06.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-07.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-08.jpg"],
+                "description": "Business productivity app for managing daily tasks.",
+                "app_store_link": "#",
+                "total_downloads": "50K+",
+                "size": "30MB"
+            },
+            {
+                "app_id": "3",
+                "name": "Medinin - Doc",
+                "platform": "iOS",
+                "category": "Medical, Health & Productivity",
+                "icon": "assets/images/Projects/Medinin Doc/Medinin.png",
+                "rating": 4.8,
+                "screenshots": ["assets/images/Projects/Buildworks/Buildworks-01.jpg", 
+                "assets/images/Projects/Buildworks/Buildworks-02.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-03.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-04.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-05.jpg", 
+                "assets/images/Projects/Buildworks/Buildworks-06.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-07.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-08.jpg"],
+                "description": "A medical documentation and appointment management app.",
+                "app_store_link": "#",
+                "total_downloads": "25K+",
+                "size": "40MB"
+            },
+            {
+                "app_id": "4",
+                "name": "Medinin - Book Appointments",
+                "platform": "iOS",
+                "category": "Medical & Health",
+                "icon": "assets/images/Projects/Medinin Doc/Medinin.png",
+                "rating": 4.6,
+                "screenshots": ["assets/images/Projects/Buildworks/Buildworks-01.jpg", 
+                "assets/images/Projects/Buildworks/Buildworks-02.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-03.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-04.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-05.jpg", 
+                "assets/images/Projects/Buildworks/Buildworks-06.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-07.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-08.jpg"],
+                "description": "An app for booking medical appointments.",
+                "app_store_link": "#",
+                "total_downloads": "20K+",
+                "size": "25MB"
+            },
+            {
+                "app_id": "5",
+                "name": "Nearlet",
+                "platform": "iOS",
+                "category": "Lifestyle & Utilities",
+                "icon": "assets/images/Projects/Nearlet/Nearlet.png",
+                "rating": 4.1,
+                "screenshots": ["assets/images/Projects/Buildworks/Buildworks-01.jpg", 
+                "assets/images/Projects/Buildworks/Buildworks-02.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-03.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-04.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-05.jpg", 
+                "assets/images/Projects/Buildworks/Buildworks-06.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-07.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-08.jpg"],
+                "description": "A lifestyle app for finding nearby services.",
+                "app_store_link": "#",
+                "total_downloads": "75K+",
+                "size": "20MB"
+            },
+            {
+                "app_id": "6",
+                "name": "Covid-19 Tracker",
+                "platform": "iOS",
+                "category": "Education & News",
+                "icon": "assets/images/Projects/Covid Tracker/covid.png",
+                "rating": 4.3,
+                "screenshots": ["assets/images/Projects/Buildworks/Buildworks-01.jpg", 
+                "assets/images/Projects/Buildworks/Buildworks-02.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-03.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-04.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-05.jpg", 
+                "assets/images/Projects/Buildworks/Buildworks-06.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-07.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-08.jpg"],
+                "description": "An app for tracking Covid-19 updates and statistics.",
+                "app_store_link": "#",
+                "total_downloads": "100K+",
+                "size": "18MB"
+            },
+            {
+                "app_id": "7",
+                "name": "Mr. Tip",
+                "platform": "iOS",
+                "category": "Productivity",
+                "icon": "assets/images/Projects/MrTip/Mr.Tip.png",
+                "rating": 4.0,
+                "screenshots": ["assets/images/Projects/Buildworks/Buildworks-01.jpg", 
+                "assets/images/Projects/Buildworks/Buildworks-02.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-03.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-04.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-05.jpg", 
+                "assets/images/Projects/Buildworks/Buildworks-06.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-07.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-08.jpg"],
+                "description": "A simple tip calculator for everyday use.",
+                "app_store_link": "#",
+                "total_downloads": "15K+",
+                "size": "12MB"
+            },
+            {
+                "app_id": "8",
+                "name": "Cyclopath",
+                "platform": "iOS",
+                "category": "Navigation, Travel & Fitness",
+                "icon": "assets/images/Projects/Buildworks/Buildworks.png",
+                "rating": 4.4,
+                "screenshots": ["assets/images/Projects/Buildworks/Buildworks-01.jpg", 
+                "assets/images/Projects/Buildworks/Buildworks-02.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-03.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-04.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-05.jpg", 
+                "assets/images/Projects/Buildworks/Buildworks-06.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-07.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-08.jpg"],
+                "description": "A cycling navigation and fitness tracking app.",
+                "app_store_link": "#",
+                "total_downloads": "30K+",
+                "size": "35MB"
+            },
+            {
+                "app_id": "9",
+                "name": "True-pulse",
+                "platform": "iOS",
+                "category": "Health & Medical",
+                "icon": "assets/images/Projects/Buildworks/Buildworks.png",
+                "rating": 4.7,
+                "screenshots": ["assets/images/Projects/Buildworks/Buildworks-01.jpg", 
+                "assets/images/Projects/Buildworks/Buildworks-02.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-03.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-04.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-05.jpg", 
+                "assets/images/Projects/Buildworks/Buildworks-06.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-07.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-08.jpg"],
+                "description": "A health monitoring app for tracking vital signs.",
+                "app_store_link": "#",
+                "total_downloads": "40K+",
+                "size": "28MB"
+            },
+            {
+                "app_id": "10",
+                "name": "True-pulse - Driver",
+                "platform": "iOS",
+                "category": "Health & Medical",
+                "icon": "assets/images/Projects/Buildworks/Buildworks.png",
+                "rating": 4.6,
+                "screenshots": ["assets/images/Projects/Buildworks/Buildworks-01.jpg", 
+                "assets/images/Projects/Buildworks/Buildworks-02.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-03.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-04.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-05.jpg", 
+                "assets/images/Projects/Buildworks/Buildworks-06.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-07.jpg",
+                "assets/images/Projects/Buildworks/Buildworks-08.jpg"],
+                "description": "A driver-focused health monitoring app.",
+                "app_store_link": "#",
+                "total_downloads": "35K+",
+                "size": "27MB"
+            }
+        ]  
+    },
+    "contact": {
+      "message": "",
+      "email": "your@email.com",
+      "website": "",
+      "social": [
+        {
+          "platform": "GitHub",
+          "icon": "github.png",
+          "link": "https://github.com/yourusername"
+        },
+        {
+          "platform": "Twitter",
+          "icon": "twitter.png",
+          "link": "https://twitter.com/yourusername"
+        }
+      ]
+    }
+  }
+  

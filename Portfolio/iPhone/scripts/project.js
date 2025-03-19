@@ -1,44 +1,59 @@
-const projects = [
-  {
-    id: 1,
-    name: "Project Alpha",
-    category: "Web Development",
-    type: "MacOS",
-    icon: "alpha-icon.png",
-    description: "A modern web application built with React and Node.js.",
-    images: ["alpha1.jpg", "alpha2.jpg"],
-    link: "https://project-alpha.com",
-    rating: 4.5,
-    review: "Great project with excellent performance!"
-  },
-  {
-    id: 2,
-    name: "Project Beta",
-    category: "Mobile App",
-    type: "iOS",
-    icon: "beta-icon.png",
-    description: "A cross-platform mobile app developed with Flutter.",
-    images: ["beta1.jpg", "beta2.jpg"],
-    link: "https://project-beta.com",
-    rating: 4.0,
-    review: "User-friendly and intuitive design."
-  }
-];
+document.addEventListener("DOMContentLoaded", async () => {
+  const projectContainer = document.querySelector(".list-section");
 
-// Render the project list
-const projectList = document.getElementById('projectList');
-projects.forEach(project => {
-  const projectCard = document.createElement('div');
-  projectCard.className = 'project-card';
-  projectCard.innerHTML = `
-    <h2>${project.name}</h2>
-    <p>${project.category}</p>
-    <button onclick="viewProject(${project.id})">View Details</button>
-  `;
-  projectList.appendChild(projectCard);
+  try {
+    const response = await fetch("../dashBoard/data/data.json");
+    const data = await response.json();
+    const { macOS_apps, iOS_apps } = data.apps;
+
+    const groupedApps = {
+      macOS: macOS_apps,
+      iOS: iOS_apps
+    };
+
+    // Clear existing content
+    projectContainer.innerHTML = "";
+
+    // Generate OS Categories (MacOS, iOS)
+    Object.keys(groupedApps).forEach(osType => {
+      if (!groupedApps[osType] || groupedApps[osType].length === 0) return;
+
+      const osSection = document.createElement("div");
+      osSection.classList.add("os-section");
+
+      // OS Heading
+      osSection.innerHTML = `<h2>${osType} Apps</h2>`;
+
+      // App List
+      const appList = document.createElement("div");
+      appList.classList.add("app-list");
+
+      groupedApps[osType].forEach(app => {
+        const appItem = document.createElement("div");
+        appItem.classList.add("list-item");
+
+        appItem.innerHTML = `
+          <img src="${app.icon}" alt="${app.name}" class="list-icon">
+          <div class="list-info">
+            <span class="list-name">${app.name}</span>
+            <span class="list-type">${app.category}</span>
+          </div>
+          <button class="list-button" onclick="viewProject('${app.platform}', '${app.app_id}')">Open</button>
+        `;
+
+        appList.appendChild(appItem);
+      });
+
+      osSection.appendChild(appList);
+      projectContainer.appendChild(osSection);
+    });
+
+  } catch (error) {
+    console.error("Error loading projects:", error);
+  }
 });
 
-// Function to navigate to the project details screen
-function viewProject(projectId) {
-  window.location.href = `project-details.html?id=${projectId}`;
+// Navigate to project details
+function viewProject(os, projectId) {
+  window.location.href = `project-details.html?os=${os}&id=${projectId}`;
 }
