@@ -21,6 +21,4 @@ portfolio/
 │   │   ├── app.css (common styles for work, projects, contact, about)
 │   │   ├── shared.css (global styles for iPhone and iPhone containers)
 │   ├── script.js
-├── mac/ (folder with all Mac mock files)
-├── visionPro/ (folder with all Vision Pro files)
 ├── README.md

@@ -1,3 +1,55 @@
+// Fetch data from json
+
+
+
+  fetch("../dashBoard/data/data.json")
+  .then(response => response.text()) // Read as text first
+  .then(text => {
+    console.log("Raw JSON response:", text); // Debug the response
+    return JSON.parse(text); // Convert to JSON
+  })
+  .then(data => console.log("Parsed data:", data))
+  .catch(error => console.error("Error loading profile data:", error));
+
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    fetch("../dashBoard/data/data.json") // Adjusted path
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            if (!data.profile) throw new Error("Profile data is missing!");
+
+            const profile = data.profile;
+
+            // Update profile picture
+            const profileImage = document.querySelector(".widget-content img");
+            if (profileImage && profile.profile_picture) {
+                profileImage.src = profile.profile_picture;
+            }
+
+            // Update name and alias
+            const nameElement = document.querySelector(".magic-text");
+            if (nameElement) {
+                nameElement.textContent = profile.name || "Username";
+            }
+
+            // Update intro
+            const introElement = document.querySelector(".widget-content p");
+            if (introElement) {
+                introElement.textContent = profile.intro || "Intro here";
+            }
+        })
+        .catch(error => console.error("Error loading profile data:", error));
+});
+
+
+
+// Sparkeling Effect 
 let index = 0,
     interval = 2000;
 
@@ -20,30 +72,3 @@ for(const star of document.getElementsByClassName("magic-star")) {
     setInterval(() => animate(star), 2000);
   }, index++ * (interval / 3))
 }
-
-/* -- ↓↓↓ If you want the sparkle effect to only occur on hover, replace lines 16 and on with this code ↓↓↓ -- */
-
-// let timeouts = [],
-//     intervals = [];
-
-// const magic = document.querySelector(".magic");
-
-// magic.onmouseenter = () => {
-//   let index = 1;
-  
-//   for(const star of document.getElementsByClassName("magic-star")) {
-//     timeouts.push(setTimeout(() => {  
-//       animate(star);
-      
-//       intervals.push(setInterval(() => animate(star), 1000));
-//     }, index++ * 300));
-//   };
-// }
-
-// magic.onmouseleave = onMouseLeave = () => {
-//   for(const t of timeouts) clearTimeout(t);  
-//   for(const i of intervals) clearInterval(i);
-  
-//   timeouts = [];
-//   intervals = [];
-// }
