@@ -2,17 +2,17 @@
     "profile": {
       "name": "Brahmendraprasad",
       "alias": "CSPrasad",
-      "bio": "",
+      "bio": "I specialize in crafting intuitive and high-performance iOS applications, focusing on seamless user experiences and innovative solutions. Passionate about solving complex technical challenges, I bring a detail-oriented approach to mobile development.",
       "intro": "iOS Developer | DevLint Creator | Passionate about Clean Code",
       "job_role": "iOS Developer",
       "location": "Hyderabad",
       "profile_picture": "../iPhone/assets/images/profile.jpg",
       "website": "",
       "social_links": {
-        "github": "",
-        "linkedin": "",
+        "github": "https://github.com/csprasad",
+        "linkedin": "https://linkedin.com/in/csprasadios",
         "twitter": "",
-        "portfolio": ""
+        "instagram": "https://www.instagram.com/csprasad_ios/"
       },
       "skills": [
         "Swift",
@@ -57,7 +57,7 @@
         "marker_image": "url-to-marker-image",
         "companies": [
             {
-                "company": "India",
+                "company": "Purplesense Digital",
                 "role": "Software Developer",
                 "duration": "Jun 2019 - Dec 2019",
                 "company_website": "",
@@ -81,7 +81,7 @@
                 "position": { "top": "90%", "left": "55%" }
             },
             {
-                "company": "India",
+                "company": "Medinin Labs",
                 "role": "Software Developer Intern",
                 "duration": "Jun 2019 - Dec 2019",
                 "company_website": "",
@@ -105,7 +105,7 @@
                 "position": { "top": "60%", "left": "30%" }
             },
             {
-                "company": "India",
+                "company": "Offshore India",
                 "role": "Software Developer Intern",
                 "duration": "Jun 2019 - Dec 2019",
                 "company_website": "",
