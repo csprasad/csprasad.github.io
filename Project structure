@@ -1,6 +1,6 @@
 portfolio/
-├── images/
-│   ├── background-images/ (contains all background images)
+├── data/
+│   ├── data json/ (Resume data)
 ├── iPhone/
 │   ├── assets/
 │   │   ├── icons/ (contains all icons needed for iPhone mock)
@@ -9,6 +9,7 @@ portfolio/
 │   ├── home.html
 │   ├── work.html
 │   ├── projects.html
+│   ├── project-details.html
 │   ├── about.html
 │   ├── contact.html
 │   ├── styles/

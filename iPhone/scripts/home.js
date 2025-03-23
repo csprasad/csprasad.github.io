@@ -2,7 +2,7 @@
 
 
 
-  fetch("../dashBoard/data/data.json")
+  fetch("../data/data.json")
   .then(response => response.text()) // Read as text first
   .then(text => {
     console.log("Raw JSON response:", text); // Debug the response
@@ -14,7 +14,7 @@
 
 
   document.addEventListener("DOMContentLoaded", function () {
-    fetch("../dashBoard/data/data.json") // Adjusted path
+    fetch("../data/data.json") // Adjusted path
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);

@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log("JavaScript loaded and DOM ready!");
 
-    fetch("../dashBoard/data/data.json") // Ensure the correct path
+    fetch("../data/data.json") // Ensure the correct path
         .then(response => response.json())
         .then(data => {
             console.log("Raw JSON response:", data);  // Debugging log

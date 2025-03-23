@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const projectContainer = document.querySelector(".list-section");
 
   try {
-    const response = await fetch("../dashBoard/data/data.json");
+    const response = await fetch("../data/data.json");
     const data = await response.json();
     const { macOS_apps, iOS_apps } = data.apps;
 

@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CSPrasad - Portfolio</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/style.css">
 
 <style>
     /* Full screen overlay for loading screen */
@@ -114,7 +113,7 @@
         function frame() {
             if (width >= 100) {
                 clearInterval(id);
-                redirectToNextPage();  // Redirect to next page once loading is complete
+                redirectToNextPage();  
             } else {
                 width++;
                 elem.style.width = `${width}%`;
@@ -122,12 +121,10 @@
         }
     }
 
-    // Function to redirect to the next page after loading is complete
     function redirectToNextPage() {
-        window.location.href = "dashboard.html";  // Redirect to container.html
+        window.location.href = "landing.html";
     }
 
-    // Start the loading animation when the page loads
     window.onload = function() {
         move();
     }
