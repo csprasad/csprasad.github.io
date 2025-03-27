@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   try {
-      const response = await fetch("../data/data.json");
+      const response = await fetch("../data/portfolio.json");
       const data = await response.json();
 
       console.log("🔹 Full Project Data:", data);

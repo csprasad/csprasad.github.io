@@ -5,7 +5,7 @@
     font-family: Arial, sans-serif;
 }
 
-.dashboard-container {
+.landing-container {
     display: flex;
     height: 100vh;
 }
@@ -20,7 +20,7 @@
     /* align-items: center; */
     /* justify-content: center; */
     padding: 20px;
-    /* text-align: center; */
+    /* text-align: left; */
 }
 
 
@@ -106,7 +106,8 @@ Left panel name and animation
     word-spacing: 0.5rem;
   }
   .side .top {
-    top: 75px;
+    right: 0;
+    top: 375px;
     text-align: right;
     color: #EEF1DA;
   }
@@ -114,8 +115,9 @@ Left panel name and animation
     top: auto;
     bottom: 75px;
   }
-  .side .top:hover a {
-    color: rgba(255, 255, 255, 0.2);
+
+  .ah:hover {
+    color: rgb(247, 191, 49);
   }
   .side .bottom:hover a:hover {
     color: rgba(255, 255, 255, 0.6);
@@ -130,9 +132,14 @@ Left panel name and animation
     flex-flow: column nowrap;
     align-items: stretch;
     min-height: 60vh;
-    width: 100%;
-    align-content: left;
-    padding: 20vh 50px 20vh 75px;
+    width: 98%;
+    /* align-content: left; */
+    margin: 0 0 0 30px;
+    padding: 0 0 0 15px;
+    border-top: 1px solid rebeccapurple;
+    border-left: 1px solid rebeccapurple;
+    border-right: 1px solid rebeccapurple;
+    border-bottom: 1px solid rebeccapurple;
   }
   .section svg {
     position: absolute;
@@ -150,11 +157,13 @@ Left panel name and animation
   .section .section__inner {
     height: 100%;
     max-width: 800px;
-    margin: auto auto auto 0;
+    /* margin: auto auto auto 0; */
   }
   .section.section--hello {
   height: 100%;
     /* background-color: #18230F; */
+    justify-content: top;
+    align-items: top;
     color: #EEF1DA;
   }
   /**
@@ -166,20 +175,24 @@ Left panel name and animation
       /* font-size: 2.5rem; */
     }
   }
-  .pre {
+  .block h2 {
     display: inline-block;
-    font-size: 12px;
-    margin: 0;
-    opacity: 0.8;
-    letter-spacing: 1.4px;
-    word-spacing: 0.2rem;
-    text-transform: uppercase;
-    margin-bottom: 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+    /* margin-top: 50px !important; */
+    letter-spacing: 1px;
+    word-spacing: 0.1rem;
+    /* text-transform: uppercase; */
+    /* margin-bottom: 1em; */
+    align-items: top;
     color: inherit;
   }
-  .pre span {
-    font-size: 0.9em;
-    margin-right: 0.4em;
-    opacity: 0.5;
+  .block p {
+    font-size: 1em;
+    /* margin-right: 0.4em; */
+    margin-top: 50px !important;
+    /* border: 1px solid red; */
+    opacity: 0.8;
   }
+  
   
