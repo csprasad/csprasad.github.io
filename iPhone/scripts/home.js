@@ -1,20 +1,5 @@
-// Fetch data from json
-
-
-
-  fetch("../data/data.json")
-  .then(response => response.text()) // Read as text first
-  .then(text => {
-    console.log("Raw JSON response:", text); // Debug the response
-    return JSON.parse(text); // Convert to JSON
-  })
-  .then(data => console.log("Parsed data:", data))
-  .catch(error => console.error("Error loading profile data:", error));
-
-
-
-  document.addEventListener("DOMContentLoaded", function () {
-    fetch("../data/data.json") // Adjusted path
+document.addEventListener("DOMContentLoaded", function () {
+    fetch("../data/portfolio.json") // Adjusted path
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);

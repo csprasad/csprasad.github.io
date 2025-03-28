@@ -1,5 +1,3 @@
-// scripts.js
-
 // Function to handle swipe gestures
 function handleSwipe(startY, currentY) {
     const deltaY = startY - currentY; // Calculate swipe distance
