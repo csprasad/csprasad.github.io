@@ -12,7 +12,7 @@
 
 /* Left Panel */
 .left-panel {
-    width: 35%;
+    width: 65%;
     background-color: #1e1e1e;
     color: white;
     display: flex;
@@ -26,7 +26,7 @@
 
 /* Right Panel */
 .right-panel {
-    width: 65%;
+    width: 35%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,10 +136,6 @@ Left panel name and animation
     /* align-content: left; */
     margin: 0 0 0 30px;
     padding: 0 0 0 15px;
-    border-top: 1px solid rebeccapurple;
-    border-left: 1px solid rebeccapurple;
-    border-right: 1px solid rebeccapurple;
-    border-bottom: 1px solid rebeccapurple;
   }
   .section svg {
     position: absolute;
@@ -175,9 +171,18 @@ Left panel name and animation
       /* font-size: 2.5rem; */
     }
   }
-  .block h2 {
+  .block img {
+    width: 20%;
+    height: 20%;
+    border: 2px dashed rgb(130, 127, 127);
+    border-radius: 50%;
+    margin-right: 30px;
+    display: none;
+  }
+  
+  .block h1 {
     display: inline-block;
-    font-size: 1.2em;
+    font-size: 3rem;
     font-weight: bold;
     /* margin-top: 50px !important; */
     letter-spacing: 1px;
@@ -190,9 +195,9 @@ Left panel name and animation
   .block p {
     font-size: 1em;
     /* margin-right: 0.4em; */
-    margin-top: 50px !important;
+    /* margin-top: 50px !important; */
     /* border: 1px solid red; */
-    opacity: 0.8;
+    /* opacity: 0.8; */
   }
   
   
