@@ -29,7 +29,6 @@
       ],
       "programming_languages": [
         "Swift",
-        "Objective-C",
         "JavaScript",
         "Python"
       ],
@@ -42,14 +41,14 @@
         "Kannada", "Hindi", "English"
       ],
       "tech_stack": [
-        "Xcode", "SwiftLint", "SwiftFormat", "Git", "Fastlane"
+        "Xcode", "VSCode", "SwiftLint", "SwiftFormat", "Git"
       ],
       "workflow": "I follow a clean and maintainable code structure using MVVM architecture, ensuring scalability and efficiency in iOS development. I believe in test-driven development and writing reusable components.",
       "hobbies": [
         "Reading tech blogs",
         "Contributing to open-source",
         "Experimenting with new iOS frameworks",
-        "Gaming"
+        "Movies"
       ]
     },
     "experience": {
