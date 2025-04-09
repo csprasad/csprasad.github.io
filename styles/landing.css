@@ -171,33 +171,3 @@ Left panel name and animation
       /* font-size: 2.5rem; */
     }
   }
-  .block img {
-    width: 20%;
-    height: 20%;
-    border: 2px dashed rgb(130, 127, 127);
-    border-radius: 50%;
-    margin-right: 30px;
-    display: none;
-  }
-  
-  .block h1 {
-    display: inline-block;
-    font-size: 3rem;
-    font-weight: bold;
-    /* margin-top: 50px !important; */
-    letter-spacing: 1px;
-    word-spacing: 0.1rem;
-    /* text-transform: uppercase; */
-    /* margin-bottom: 1em; */
-    align-items: top;
-    color: inherit;
-  }
-  .block p {
-    font-size: 1em;
-    /* margin-right: 0.4em; */
-    /* margin-top: 50px !important; */
-    /* border: 1px solid red; */
-    /* opacity: 0.8; */
-  }
-  
-  
