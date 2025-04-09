@@ -2,8 +2,8 @@
     "profile": {
       "name": "Brahmendraprasad",
       "alias": "CSPrasad",
-      "bio": "I specialize in crafting intuitive and high-performance iOS applications, focusing on seamless user experiences and innovative solutions. Passionate about solving complex technical challenges, I bring a detail-oriented approach to mobile development.",
-      "intro": "iOS Developer | DevLint Creator | Passionate about Clean Code",
+      "bio": "Experienced iOS developer with a background in startups and freelance projects, specializing in Swift, UIKit, and full app lifecycle development. Skilled at turning ideas into functional apps, solving technical challenges, and collaborating with teams to deliver polished products. 🔹 Proven problem-solver – Debugged complex issues, optimized performance, and refactored legacy code in fast-paced environments. 🔹 Startup-tested – Built apps from scratch, adapted to changing requirements, and contributed across the entire development stack. 🔹 Freelance versatility – Delivered client projects with clean, maintainable code and seamless API integrations.Passionate about writing efficient code, improving user experience, and continuous learning. Looking to bring my practical skills and resilience to a forward-thinking engineering team.",
+      "intro": "iOS Engineer - DevLint Creator | Architecting maintainable apps • Startup survivor • Clean code advocate",
       "job_role": "iOS Developer",
       "location": "Hyderabad",
       "profile_picture": "../iPhone/assets/images/profile.jpg",
@@ -57,21 +57,21 @@
         "companies": [
             {
                 "company": "Purplesense Digital",
-                "role": "Software Developer",
-                "duration": "Jun 2019 - Dec 2019",
+                "role": "iOS Developer(Client Solutions Team)",
+                "duration": "Aug 2018 - Dec 2019",
                 "company_website": "",
-                "tech_stack": ["React", "Node.js", "MongoDB", "Express.js", "Redux"],
+                "tech_stack": ["Swift", "UIKit", "Firebase", "MapKit", "Stripe SDK", "Alamofire"],
                 "responsibilities": [
-                    "Developed scalable web applications using React and Node.js.",
-                    "Assisted in designing database schemas for optimized query performance.",
-                    "Built reusable React components to streamline frontend development.",
-                    "Integrated REST APIs into web applications and handled authentication mechanisms.",
-                    "Performed code reviews and collaborated with team members for best practices.",
-                    "Worked on debugging and performance optimization of JavaScript applications."
+                    "Developed 3 MVP apps (fitness, ambulance booking, services).",
+                    "Implemented Stripe/PayPal payment integrations.",
+                    "Created real-time tracking using MapKit and Firebase.",
+                    "Optimized app performance for low-bandwidth areas."
                 ],
                 "projects": [
-                    "Developed a customer management dashboard with real-time analytics.",
-                    "Implemented a notification system for an internal task management platform."
+                    "Shipped all 3 apps under deadline despite changing requirements",
+                    "Achieved <0.5% crash rate through rigorous testing",
+                    "Designed offline-first architecture used for 2+ years post-launch",
+                    "Reduced ambulance dispatch time by 30 seconds via geo-optimization"
                 ],
                 "achievements": [
                     "Optimized database queries, reducing response time by 40%.",
@@ -81,21 +81,23 @@
             },
             {
                 "company": "Medinin Labs",
-                "role": "Software Developer Intern",
-                "duration": "Jun 2019 - Dec 2019",
+                "role": "iOS Engineer(Healthcare Tech Startup - Core Product Team)",
+                "duration": "Aug 2019 - Aug 2021",
                 "company_website": "",
-                "tech_stack": ["React", "Node.js", "MongoDB", "Express.js", "Redux"],
+                "tech_stack": ["Swift", "UIKit", "CoreData", "Combine", "WebSocket", "PDFKit", "3D SceneKit"],
                 "responsibilities": [
-                    "Developed scalable web applications using React and Node.js.",
-                    "Assisted in designing database schemas for optimized query performance.",
-                    "Built reusable React components to streamline frontend development.",
-                    "Integrated REST APIs into web applications and handled authentication mechanisms.",
-                    "Performed code reviews and collaborated with team members for best practices.",
-                    "Worked on debugging and performance optimization of JavaScript applications."
+                    "Owned end-to-end development of patient/doctor apps (Swift, UIKit)",
+                    "Designed architecture for multi-module healthcare system",
+                    "Collaborated with medical professionals on UX for 3D model viewer",
+                    "Implemented real-time sync for appointment booking system",
+                    "Mentored junior developers in code reviews and best practices"
                 ],
                 "projects": [
-                    "Developed a customer management dashboard with real-time analytics.",
-                    "Implemented a notification system for an internal task management platform."
+                    "Delivered 4 production apps from scratch to App Store within 2 years",
+                    "Reduced prescription generation time by 40% through PDF optimization",
+                    "Built reusable UI components library cutting dev time by 25%",
+                    "Integrated WebSocket for live construction project updates",
+                    "Scaled property search to handle 10,000+ listings with CoreData"
                 ],
                 "achievements": [
                     "Optimized database queries, reducing response time by 40%.",
@@ -105,17 +107,17 @@
             },
             {
                 "company": "Offshore India",
-                "role": "Software Developer Intern",
-                "duration": "Jun 2019 - Dec 2019",
+                "role": "Delivered custom iOS solutions for startups and SMEs",
+                "duration": "Aug 2021 - Present",
                 "company_website": "",
-                "tech_stack": ["React", "Node.js", "MongoDB", "Express.js", "Redux"],
+                "tech_stack": ["Swift", "SwiftUI", "UIKit", "Combine", "CoreData", "Firebase", "REST/GraphQL"],
                 "responsibilities": [
-                    "Developed scalable web applications using React and Node.js.",
-                    "Assisted in designing database schemas for optimized query performance.",
-                    "Built reusable React components to streamline frontend development.",
-                    "Integrated REST APIs into web applications and handled authentication mechanisms.",
-                    "Performed code reviews and collaborated with team members for best practices.",
-                    "Worked on debugging and performance optimization of JavaScript applications."
+                    "Full-Cycle Development – Designed and built 12+ iOS apps from scratch to App Store deployment using Swift/UIKit",
+                    "Client Collaboration – Translated business requirements into technical specs with 5+ international clients",
+                    "Performance Optimization – Reduced crash rates by 40% in legacy apps through systematic debugging",
+                    "API Integration – Implemented REST/GraphQL solutions with robust error handling and caching",
+                    "Code Modernization – Migrated 3 Objective-C codebases to Swift, improving maintainability",
+                    "UI/UX Implementation – Built custom animations and responsive layouts matching designer prototypes"
                 ],
                 "projects": [
                     "Developed a customer management dashboard with real-time analytics.",

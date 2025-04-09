@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             <span class="list-name">${app.name}</span>
             <span class="list-type">${app.category}</span>
           </div>
-          <button class="list-button" onclick="viewProject('${app.platform}', '${app.app_id}')">Open</button>
+          <button class="list-button btn" onclick="viewProject('${app.platform}', '${app.app_id}')">GET</button>
         `;
 
         appList.appendChild(appItem);
