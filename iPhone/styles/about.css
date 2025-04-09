@@ -32,3 +32,19 @@
     text-decoration: none;
     padding-top: 25px;
   }
+
+  ul {
+    list-style: none !important;
+    /* padding-left: 15px; */
+    /* margin: 15px; */
+  }
+
+  /* PERFECTLY ALIGNED CUSTOM BULLET */
+  li::before {
+    content: "◇";
+    position: absolute;
+    left: 1.2em;
+    color: #3a86ff;
+    font-size: 1em;
+  }
+
