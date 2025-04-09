@@ -3,11 +3,11 @@ document.addEventListener("DOMContentLoaded", async () => {
   const projectId = urlParams.get("id"); // Keep it as a string
   const osType = urlParams.get("os"); // Get OS type from URL
 
-  console.log("🔹 Project ID from URL:", projectId);
-  console.log("🔹 OS Type from URL:", osType);
+  console.log("Project ID from URL:", projectId);
+  console.log("OS Type from URL:", osType);
 
   if (!projectId || !osType) {
-      console.error("❌ Missing project ID or OS type in URL.");
+      console.error("Missing project ID or OS type in URL.");
       document.querySelector(".app-container").innerHTML = `<p>Invalid request.</p>`;
       return;
   }
@@ -29,12 +29,12 @@ document.addEventListener("DOMContentLoaded", async () => {
           throw new Error(`Invalid OS type: ${osType}`);
       }
 
-      console.log("🔹 List of Apps for OS:", osType, apps);
+      console.log("List of Apps for OS:", osType, apps);
 
       // Find the project by ID (convert both to strings for consistency)
       const project = apps.find(app => String(app.app_id) === String(projectId));
 
-      console.log("🔹 Found Project:", project);
+      console.log("Found Project:", project);
 
       if (!project) {
           throw new Error("Project not found.");
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       document.getElementById("app-icon").src = project.icon;
       document.getElementById("app-name").textContent = project.name;
       document.getElementById("app-category").textContent = project.category;
-      document.getElementById("app-rating").textContent = `Rating: ${project.rating}/5`;
+    //   document.getElementById("app-rating").textContent = `Rating: ${project.rating}/5`;
       document.getElementById("description").textContent = project.description;
       document.getElementById("action-button").href = project.app_store_link;
 

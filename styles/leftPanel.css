@@ -1,0 +1,155 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.container {
+    width: 100%;
+    /* padding: 20px; */
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+.header-content {
+    margin-top: 0px;
+}
+
+.icon {
+    font-size: 28px;
+    color: #EEF1DA;
+}
+.dot {
+    font-size: 5px;
+    border-radius: 5px;
+    color: #ff9500; 
+}
+
+.contact a {
+    font-size: 1rem;
+    line-height: 1;
+    color: #999;
+    font-weight: 500;
+}
+
+.menu {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.profile {
+    padding: 0;
+    display: flex;
+    gap: 1.2rem;
+}
+
+.detail {
+    /* display:contents; */
+    gap: 1rem ;
+
+}
+
+
+.profile-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #ffffffa7;
+}
+
+h1 {
+    font-size: 2em; /* Slightly larger for emphasis */
+    margin: 0 0;
+    color: #999;
+    line-height: 1.2;
+}
+
+.name {
+    color: #EEF1DA;
+}
+.alias {
+    color: #999;
+}
+
+.title {
+    color: #EEF1DA;
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+.working {
+    color: rgb(247, 191, 49);
+}
+
+.working:hover {
+    color: #ff9500;
+}
+
+p {
+    color: #999; 
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.company {
+    color: #ff9500;
+    font-weight: 700;
+    font-size: 1.8em; /* Larger for prominence */
+}
+
+.open-to-work {
+    color: #EEF1DA !important;
+    margin-top: 15px;
+    vertical-align: middle;
+    display: flex;
+    padding:8px;
+    margin-right:4px;
+    border: 1px solid #b0adad;
+    border-radius: 5rem;
+    align-items: center;
+    gap: 10px;
+    max-width: 6.7em;
+}
+
+.open-to-work img {
+    height: 15px;
+    width: 15px;
+}
+
+.open-to-work span {
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.call-section {
+    display: flex;
+    margin: 25px 0;
+    gap: 1rem;
+}
+
+.book-call {
+    background-color:#EEF1DA;
+    color: #222;
+    border: none;
+    padding: 10px 20px; /* Larger padding for button */
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 100px;
+    /* margin: 25px 0; */
+    transition: background-color 0.3s;
+}
+
+.book-call:hover {
+    background-color: #fff;
+}
+
+
+.connect {
+    color: #666;
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 400px;
+    margin: 0 auto; /* Centered text */
+}
