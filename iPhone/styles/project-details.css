@@ -3,11 +3,13 @@
     max-width: 240px;
     margin-top: 2rem;
     width: 100%; 
+    text-decoration: none !important;
   }
 
   .app-header {
     display: flex;
-    align-items: top;
+    margin-top: 0;
+    /* align-items: top; */
     gap: 0.5rem;
   }
 
@@ -19,9 +21,7 @@
     align-items: center;
     justify-content: center;
     background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Gradient background for depth */
-    box-shadow: 
-      0 4px 6px rgba(0, 0, 0, 0.1),
-      inset 0 1px 2px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),inset 0 1px 2px rgba(255, 255, 255, 0.5);
   }
   
   .screenshot-container {
@@ -32,29 +32,27 @@
   }
   
   .screenshot-container img {
-    width: 150px;
+    width: 130px;
     height: 250px;
     border-radius: 10px;
     flex-shrink: 0; 
   }
 
   .app-info {
-    flex-grow: 0.5;
+    display: grid;
   }
 
   .app-name {
-    display: inline-block;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #1d1d1f;
-    display: block;
-    vertical-align: top;
+    align-items: top !important;
+    text-align: top !important;
   }
   
   .app-category {
     font-size: 0.6rem;
     color: #6e6e73;
-    display: block;
-    padding: 0;
+    margin-top: 0;
   }
   
   .app-rating {
@@ -68,16 +66,19 @@
   }
   
   .description {
-    font-size: 1rem;
+    font-size: 0.8rem !important;
     color: #333;
   }
   
   .Action-button-container .btn {
-    display: inline-block;
-    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    color: white;
     background-color: #007aff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    text-align: center;
+    border-radius: 10px;
+    font-size: 0.6rem;
+    font-weight: 300;
+    padding: 4px 8px;
+    max-height: 28px;
   }
