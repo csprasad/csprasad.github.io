@@ -1,6 +1,4 @@
-> [!IMPORTANT]  
-> **This project is currently in active development!**
-> 
+> [!IMPORTANT]
 > I'm actively working on new features and improvements.
 > Expect changes and possible bugs. 
 > Please try it out and report any issues!
