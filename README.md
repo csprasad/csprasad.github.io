@@ -1,20 +1,37 @@
 > [!IMPORTANT]
 > I'm actively working on new features and improvements.
 > Expect changes and possible bugs. 
-> Please try it out and report any issues!
+> Please try it out and report any issues via [GitHub Issues](https://github.com/csprasad/csprasad.github.io/issues)!
 
-# My Portfolio
-
+## Portfolio
 Welcome to my portfolio! This project showcases my work, skills, and experience as an iOS developer.
 
-## Live Demo  
-🔗 [View Portfolio](https://csprasad.github.io/csprasad-portfolio)
-
+🔗 [Visit Portfolio](https://csprasad.github.io)
 
 ## Features  
 - **iPhone Mock UI** – Displays portfolio in an interactive iPhone-style layout.  
 - **Responsive Design** – Works on all screen sizes.  
-- **Dynamic Content** – Sections like About, Work, and Projects.  
+- **Dynamic Content** – Sections like About, Work, and Projects.
+ ```plaintext
++----------------------+
+|         ▪▪▪▪         |
+|+--------------------+|
+||                    ||
+||                    ||
+||         🙋         ||
+||      Developer     ||
+||        Intro       ||
+||                    ||
+||                    ||
+||                    ||
+||                    ||
+||                    ||
+||----  ---  ---  ----||
+|| 📄 | 📂 | 💼 | 📞 ||
+|+--------------------+|
+|        _____         |
++----------------------+
+```
 
 ## 🛠️ Built With  
 - **HTML, CSS, JavaScript**  
