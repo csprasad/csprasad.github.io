@@ -1,8 +1,8 @@
 /* App Page Styles */
 .app-page {
     padding: 1rem;
-    color: black;
-    background-color: white;
+    color: var(--text-color, #1d1d1f); /* Theme-aware text */
+    background-color: var(--bg-color, #fff); /* Theme-aware background */
     border-radius: 2.4rem;
     position: relative;
     height: 100%;
@@ -10,51 +10,57 @@
     flex-direction: column;
     justify-content: flex-start; /* Align content to the top */
     align-items: flex-start; /* Align content to the left */
-    padding-top: 3rem; /* Add padding to avoid overlap with status bar */
+    padding-top: 3rem; /* Padding to avoid overlap with status bar */
     overflow-y: auto; /* Enable scrolling */
     scrollbar-width: none; /* Hide scrollbar for Firefox */
-  }
+    transition: all 0.3s ease; /* Smooth theme change */
+}
 
-  /* Hide scrollbar in WebKit browsers (Chrome, Safari) */
+/* Hide scrollbar in WebKit browsers (Chrome, Safari) */
 .app-page::-webkit-scrollbar {
   display: none;
 }
-  
-  .app-page h2 {
+
+.app-page h2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    margin-top: 2rem; /* Add margin to avoid overlap with status bar */
-  }
-  
-  .app-page p {
+    margin-top: 2rem; /* Avoid overlap with status bar */
+    color: var(--text-color); /* Theme-aware */
+}
+
+.app-page p {
     font-size: 1rem;
     line-height: 1.5;
-  }
-  
-  .app-page ul {
+    color: var(--text-muted, #666); /* Slightly lighter for body text */
+}
+
+.app-page ul {
     list-style-type: disc;
     padding-left: 1.5rem;
-  }
-  
-  .app-page ul li {
+}
+
+.app-page ul li {
     margin-bottom: 0.5rem;
-  }
-  
-  .app-page a {
-    color: #007bff;
+    color: var(--text-muted); /* Use muted text for list items */
+}
+
+.app-page a {
+    color: var(--accent); /* Use accent color for links */
     text-decoration: none;
-  }
-  
-  .app-page a:hover {
+    transition: color 0.3s ease;
+}
+
+.app-page a:hover {
     text-decoration: underline;
-  }
-  
-  .back-button {
-    position: absolute;
+    color: var(--accent-hover); /* Hover accent */
+}
+
+.back-button {
+    position: sticky;
     top: 1rem;
-    left: 1rem;
+    left: 0.1rem;
     font-size: 1.2rem;
-    color: black;
-    text-decoration: none;
-    padding-top: 25px;
-  }
+    color: var(--text-color) !important; /* Theme-aware */
+    text-decoration: none !important;
+    transition: color 0.3s ease;
+}

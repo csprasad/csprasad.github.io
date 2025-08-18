@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", async () => {
   const projectContainer = document.querySelector(".list-section");
+  
+  const fromLanding = document.referrer.includes("landing.html") || window.location.pathname.includes("landing.html");
 
   try {
     const response = await fetch("../data/portfolio.json");
@@ -29,11 +31,12 @@ document.addEventListener("DOMContentLoaded", async () => {
       appList.classList.add("app-list");
 
       groupedApps[osType].forEach(app => {
+        const iconPath = fromLanding ? `iPhone/${app.icon}` : app.icon;
         const appItem = document.createElement("div");
         appItem.classList.add("list-item");
 
         appItem.innerHTML = `
-          <img src="${app.icon}" alt="${app.name}" class="list-icon">
+          <img src="${iconPath}" alt="${app.name}" class="list-icon">
           <div class="list-info">
             <span class="list-name">${app.name}</span>
             <span class="list-type">${app.category}</span>
