@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/landing.css">
     <link rel="stylesheet" href="styles/leftPanel.css">
+    <link rel="stylesheet" href="iPhone/styles/project.css">
+    <link rel="stylesheet" href="styles/root.css">
 </head>
-<body>
+<body class="landing">
     <div class="landing-container">
         <!-- Left Panel: Name & Details -->
         <div class="left-panel">
@@ -40,17 +42,26 @@
                             <div class="profile">
                                 <img src="iPhone/assets/images/profile.jpg" alt="CSPrasad" class="profile-img">
                                 <div class="detail">
-                                    <h1>Hi, I'm <span class="name">C S Prasad!</span></h1>
+                                    <h2>Hi, I'm <span class="name">C S Prasad! </span><span class="alias">(Brahmendraprasad)</span></h2>
                                     <!-- <p>(Brahmendraprasad) <span class="title"></span></p> -->
-                                    <p>I'm an indie<span class="title"> iOS Engineer</span> currently working on <a class="working" href="https://github.com/csprasad/DevLint">DevLint</a>.</p>
-                                    <p><span class="company"></span> <span class="open-to-work">
+                                    <!-- <p>I'm an indie<span class="title"> iOS Engineer</span> currently working on <a class="working" href="https://github.com/csprasad/DevLint">DevLint</a>.</p> -->
+                                      <p>iOS Developer with 7 years of experience, crafting both professional and indie apps using SwiftUI and UIKit</p>
+                                    <p><span class="company"></span> 
+                                    <span class="open-to-work">
                                         <img src="pulse.png">
                                         <span>Open to work</span>
                                     </span></p>
                                     <div class="call-section">
-                                        <button class="book-call" title="Still working on this" style="display: none;">Book a call</button>
-                                        <p class="connect">Feel free to explore my portfolio and reach out <br>—I'd love to connect!</p>
-                                    </div>
+                                        <button class="book-call" title="Still working on this">Book a call</button>
+                                        <p class="connect">Feel free to explore my portfolio and reach out - I'd love to connect!</p>
+                                    </div>   
+                                    <h2>Recent Work</h2>
+                                    <p>Here are some of the work I’ve done, from apps to experiments.</p>
+                                    <div class="project-section">
+                                        <section class="list-section">
+                                            <!-- Apps here  -->
+                                        </section>
+                                    </div>         
                                 </div>
                             </div>
                         </main>
@@ -61,10 +72,11 @@
 
         <!-- Right Panel: Dynamic Screen Display -->
         <div class="right-panel">
-            <iframe id="os-display" src="iPhone/index.html" frameborder="0"></iframe>
+            <iframe id="os-display" src="iPhone/home.html" frameborder="0"></iframe>
         </div>
     </div>
 
     <script src="scripts/landing.js"></script>
+    <script src="iPhone/scripts/project.js"></script>
 </body>
 </html>

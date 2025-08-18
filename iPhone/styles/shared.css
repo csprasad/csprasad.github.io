@@ -2,9 +2,8 @@
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-
 body {
-  background-color: #f3f4f6; 
+  background-color: var(--bg-color, #f3f4f6); 
   margin: 0;
   padding: 0;
   display: flex;
@@ -17,48 +16,45 @@ body {
 .phone-container {
   width: 18rem; /* iPhone width */
   height: 37rem; /* iPhone height */
-  background: linear-gradient(to bottom, #dbeafe, #bfdbfe); /* Blue-100 to Blue-200 */
-  border: 2px solid #93c5fd; /* Blue-300 */
+  background: linear-gradient(to bottom, var(--bg-phone-start, #dbeafe), var(--bg-phone-end, #bfdbfe));
+  border: 2px solid var(--border, #93c5fd);
   border-radius: 3rem;
   box-shadow: 1rem 1rem 6rem rgba(0, 0, 0, 0.4), 0 0 0.1rem rgba(0, 0, 0, 0.4);
   position: relative;
   overflow: hidden;
+  transition: all 0.3s ease; /* Smooth theme switch */
 }
 
 .phone-screen {
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color: var(--bg-screen, #000); /* Theme-aware */
   border-radius: 3rem;
   padding: 0.5rem;
   box-sizing: border-box;
-  position: relative; /* Ensure child elements are positioned relative to this */
+  position: relative;
 }
 
 /* Side Buttons */
 .side-button {
   width: 0.25rem;
   height: 3rem;
-  background: linear-gradient(to right, #9ca3af, #bfdbfe, #bfdbfe); /* Neutral-400 to Blue-300 */
-  border-right: 1px solid #dbeafe; /* Blue-100 */
+  background: linear-gradient(to right, var(--side-btn-start, #9ca3af), var(--side-btn-end, #bfdbfe), var(--side-btn-end, #bfdbfe));
+  border-right: 1px solid var(--border, #dbeafe);
   box-shadow: inset 2px 0 1px rgba(0, 0, 0, 0.2);
   position: absolute;
   right: -0.25rem;
+  transition: all 0.3s ease;
 }
 
-.side-button.volume-up {
-  top: 20%;
-}
-
-.side-button.volume-down {
-  top: 30%;
-}
+.side-button.volume-up { top: 20%; }
+.side-button.volume-down { top: 30%; }
 
 .side-button.lock-button {
   width: 0.25rem;
   height: 4rem;
-  background: linear-gradient(to left, #9ca3af, #bfdbfe, #bfdbfe);
-  border-left: 1px solid #dbeafe;
+  background: linear-gradient(to left, var(--side-btn-start, #9ca3af), var(--side-btn-end, #bfdbfe), var(--side-btn-end, #bfdbfe));
+  border-left: 1px solid var(--border, #dbeafe);
   left: -0.25rem;
   top: 40%;
 }
@@ -66,21 +62,20 @@ body {
 /* Status Bar */
 .status-bar {
   width: 100%;
-  height: 3rem; /* Fixed height for status bar */
+  height: 3rem;
   display: flex;
-  justify-content: center; /* Center the island */
+  justify-content: center;
   align-items: center;
   padding: 0.5rem 1.3rem;
-  color: white;
+  color: var(--text-color, #fff);
   font-size: 0.9rem;
-  /* background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(1px); */
-  position: absolute; /* Position absolutely at the top */
+  position: absolute;
   top: 0;
   left: 0;
-  z-index: 10; /* Ensure it stays on top */
+  z-index: 10;
 }
 
+/* Island */
 .island {
   width: 5rem;
   height: 1.5rem;
@@ -89,6 +84,7 @@ body {
   border-radius: 9999px;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%); /* Center the island */
+  transform: translateX(-50%);
   margin-top: 0.6rem;
+  transition: all 0.3s ease;
 }
