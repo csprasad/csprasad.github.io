@@ -1,25 +1,116 @@
-portfolio/
-├── data/
-│   ├── data json/ (Resume data)
-├── iPhone/
-│   ├── assets/
-│   │   ├── icons/ (contains all icons needed for iPhone mock)
-│   │   ├── images/ (contains all images needed for iPhone mock)
-│   ├── index.html
-│   ├── home.html
-│   ├── work.html
-│   ├── projects.html
-│   ├── project-details.html
-│   ├── about.html
-│   ├── contact.html
-│   ├── styles/
-│   │   ├── lockscreen.css
-│   │   ├── homescreen.css
-│   │   ├── about.css
-│   │   ├── contact.css
-│   │   ├── project.css
-│   │   ├── work.css
-│   │   ├── app.css (common styles for work, projects, contact, about)
-│   │   ├── shared.css (global styles for iPhone and iPhone containers)
-│   ├── script.js
-├── README.md
+📦csprasad.github.io
+┣ 📂data
+┃ ┗ 📜portfolio.json
+┣ 📂iPhone
+┃ ┣ 📂assets
+┃ ┃ ┗ 📂images
+┃ ┃ ┃ ┣ 📂Projects
+┃ ┃ ┃ ┃ ┣ 📂BGU
+┃ ┃ ┃ ┃ ┃ ┣ 📜BGU-01.jpeg
+┃ ┃ ┃ ┃ ┃ ┣ 📜BGU-02.jpeg
+┃ ┃ ┃ ┃ ┃ ┣ 📜BGU-03.jpeg
+┃ ┃ ┃ ┃ ┃ ┣ 📜BGU-04.jpeg
+┃ ┃ ┃ ┃ ┃ ┣ 📜BGU-05.jpeg
+┃ ┃ ┃ ┃ ┃ ┗ 📜BGU.jpg
+┃ ┃ ┃ ┃ ┣ 📂Buildworks
+┃ ┃ ┃ ┃ ┃ ┣ 📜Buildworks-01.jpg
+┃ ┃ ┃ ┃ ┃ ┣ 📜Buildworks-02.jpg
+┃ ┃ ┃ ┃ ┃ ┣ 📜Buildworks-03.jpg
+┃ ┃ ┃ ┃ ┃ ┣ 📜Buildworks-04.jpg
+┃ ┃ ┃ ┃ ┃ ┣ 📜Buildworks-05.jpg
+┃ ┃ ┃ ┃ ┃ ┣ 📜Buildworks-06.jpg
+┃ ┃ ┃ ┃ ┃ ┣ 📜Buildworks-07.jpg
+┃ ┃ ┃ ┃ ┃ ┣ 📜Buildworks-08.jpg
+┃ ┃ ┃ ┃ ┃ ┗ 📜Buildworks.png
+┃ ┃ ┃ ┃ ┣ 📂Covid Tracker
+┃ ┃ ┃ ┃ ┃ ┣ 📜Covid-01.jpg
+┃ ┃ ┃ ┃ ┃ ┣ 📜Covid-02.jpg
+┃ ┃ ┃ ┃ ┃ ┗ 📜Covid.png
+┃ ┃ ┃ ┃ ┣ 📂Cyclopath
+┃ ┃ ┃ ┃ ┃ ┣ 📜Cyclopath-01.jpg
+┃ ┃ ┃ ┃ ┃ ┣ 📜Cyclopath-02.jpg
+┃ ┃ ┃ ┃ ┃ ┣ 📜Cyclopath-03.jpg
+┃ ┃ ┃ ┃ ┃ ┣ 📜Cyclopath-04.jpg
+┃ ┃ ┃ ┃ ┃ ┣ 📜Cyclopath-05.jpg
+┃ ┃ ┃ ┃ ┃ ┗ 📜Cyclopath.jpg
+┃ ┃ ┃ ┃ ┣ 📂DevLint
+┃ ┃ ┃ ┃ ┃ ┣ 📜DevLint-01.png
+┃ ┃ ┃ ┃ ┃ ┗ 📜DevLint.png
+┃ ┃ ┃ ┃ ┣ 📂Medinin Doc
+┃ ┃ ┃ ┃ ┃ ┣ 📜Medinin-01.jpg
+┃ ┃ ┃ ┃ ┃ ┣ 📜Medinin-02.jpg
+┃ ┃ ┃ ┃ ┃ ┣ 📜Medinin-03.jpg
+┃ ┃ ┃ ┃ ┃ ┣ 📜Medinin-04.jpg
+┃ ┃ ┃ ┃ ┃ ┣ 📜Medinin-05.jpg
+┃ ┃ ┃ ┃ ┃ ┣ 📜Medinin-06.jpg
+┃ ┃ ┃ ┃ ┃ ┣ 📜Medinin-07.jpg
+┃ ┃ ┃ ┃ ┃ ┗ 📜Medinin.png
+┃ ┃ ┃ ┃ ┣ 📂Medinin Patient
+┃ ┃ ┃ ┃ ┃ ┣ 📜Medinin-01.jpeg
+┃ ┃ ┃ ┃ ┃ ┣ 📜Medinin-02.jpeg
+┃ ┃ ┃ ┃ ┃ ┣ 📜Medinin-03.jpeg
+┃ ┃ ┃ ┃ ┃ ┣ 📜Medinin-04.jpeg
+┃ ┃ ┃ ┃ ┃ ┣ 📜Medinin-05.jpeg
+┃ ┃ ┃ ┃ ┃ ┣ 📜Medinin-06.jpeg
+┃ ┃ ┃ ┃ ┃ ┣ 📜Medinin-07.jpeg
+┃ ┃ ┃ ┃ ┃ ┣ 📜Medinin-08.jpeg
+┃ ┃ ┃ ┃ ┃ ┗ 📜Medinin.png
+┃ ┃ ┃ ┃ ┣ 📂MrTip
+┃ ┃ ┃ ┃ ┃ ┣ 📜Mr.Tip-01.png
+┃ ┃ ┃ ┃ ┃ ┣ 📜Mr.Tip-02.png
+┃ ┃ ┃ ┃ ┃ ┗ 📜Mr.Tip.png
+┃ ┃ ┃ ┃ ┣ 📂Nearlet
+┃ ┃ ┃ ┃ ┃ ┣ 📜Nearlet-01.jpg
+┃ ┃ ┃ ┃ ┃ ┣ 📜Nearlet-01.png
+┃ ┃ ┃ ┃ ┃ ┣ 📜Nearlet-02.jpg
+┃ ┃ ┃ ┃ ┃ ┣ 📜Nearlet-02.png
+┃ ┃ ┃ ┃ ┃ ┣ 📜Nearlet-03.jpg
+┃ ┃ ┃ ┃ ┃ ┣ 📜Nearlet-04.jpg
+┃ ┃ ┃ ┃ ┃ ┗ 📜Nearlet.png
+┃ ┃ ┃ ┃ ┗ 📂Truepulse
+┃ ┃ ┃ ┃ ┃ ┣ 📜Sign up-11.png
+┃ ┃ ┃ ┃ ┃ ┣ 📜Sign up-3.png
+┃ ┃ ┃ ┃ ┃ ┣ 📜Sign up-4-1.png
+┃ ┃ ┃ ┃ ┃ ┣ 📜Sign up-4.png
+┃ ┃ ┃ ┃ ┃ ┗ 📜Sign up.png
+┃ ┃ ┃ ┣ 📜Map-iOS.png
+┃ ┃ ┃ ┣ 📜Map.png
+┃ ┃ ┃ ┣ 📜iPhone-15.webp
+┃ ┃ ┃ ┗ 📜profile.jpg
+┃ ┣ 📂pages
+┃ ┃ ┗ 📜lockscreen.html
+┃ ┣ 📂scripts
+┃ ┃ ┣ 📜home.js
+┃ ┃ ┣ 📜index.js
+┃ ┃ ┣ 📜project-details.js
+┃ ┃ ┣ 📜project.js
+┃ ┃ ┗ 📜work.js
+┃ ┣ 📂styles
+┃ ┃ ┣ 📜about.css
+┃ ┃ ┣ 📜app.css
+┃ ┃ ┣ 📜contact.css
+┃ ┃ ┣ 📜homescreen.css
+┃ ┃ ┣ 📜lockscreen.css
+┃ ┃ ┣ 📜project-details.css
+┃ ┃ ┣ 📜project.css
+┃ ┃ ┣ 📜shared.css
+┃ ┃ ┗ 📜work.css
+┃ ┣ 📜about.html
+┃ ┣ 📜contact.html
+┃ ┣ 📜home.html
+┃ ┣ 📜index.html
+┃ ┣ 📜project-details.html
+┃ ┣ 📜projects.html
+┃ ┗ 📜work.html
+┣ 📂scripts
+┃ ┗ 📜landing.js
+┣ 📂styles
+┃ ┣ 📜landing.css
+┃ ┣ 📜leftPanel.css
+┃ ┗ 📜styles.css
+┣ 📜.gitignore
+┣ 📜Project structure
+┣ 📜README.md
+┣ 📜index.html
+┣ 📜landing.html
+┗ 📜pulse.png
