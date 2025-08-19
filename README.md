@@ -40,6 +40,6 @@ Welcome to my portfolio! This project showcases my work, skills, and experience 
 
 ## Contact  
 If you want to connect, feel free to reach out:  
-- **Email**: codealligator.csprasad@email.com  
+- **Email**: codealligator.csprasad@gmail.com  
 - **GitHub**: [CSPrasad](https://github.com/csprasad)  
 - **LinkedIn**: [CSPrasad](https://linkedin.com/in/csprasadios)  
