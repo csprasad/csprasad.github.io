@@ -9,6 +9,3 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-
-
-// Animation for name 

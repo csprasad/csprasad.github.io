@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSPrasad - Portfolio</title>
+    <link rel="icon" href="iPhone/assets/images/profile.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/landing.css">
     <link rel="stylesheet" href="styles/leftPanel.css">
     <link rel="stylesheet" href="iPhone/styles/project.css">
+    <link rel="stylesheet" href="iPhone/styles/project-details.css">
     <link rel="stylesheet" href="styles/root.css">
 </head>
 <body class="landing">
@@ -52,16 +54,36 @@
                                         <span>Open to work</span>
                                     </span></p>
                                     <div class="call-section">
-                                        <button class="book-call" title="Still working on this">Book a call</button>
+                                        <button class="book-call" onclick="warnAndEmail()">Book a call</button>
                                         <p class="connect">Feel free to explore my portfolio and reach out - I'd love to connect!</p>
                                     </div>   
-                                    <h2>Recent Work</h2>
+                                    <!-- <h2>Recent Work</h2> -->
                                     <p>Here are some of the work I’ve done, from apps to experiments.</p>
                                     <div class="project-section">
                                         <section class="list-section">
                                             <!-- Apps here  -->
                                         </section>
-                                    </div>         
+                                    </div> 
+                                    <!-- Popup on projects page -->
+                                    <div id="project-popup" class="project-popup hidden">
+                                        <div class="popup-overlay"></div>
+                                        <div class="popup-content">
+                                            <span id="popup-close" class="popup-close">×</span>
+                                            <div id="popup-inner">
+                                            <!-- App details will be dynamically injected here -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Fullscreen Image Modal -->
+                                    <div id="image-modal" class="image-modal">
+                                        <span class="close">&times;</span>
+                                        <img class="modal-content" id="modal-img">
+                                        <div id="caption"></div>
+                                        <!-- Optional: Prev/Next buttons -->
+                                        <button id="prev" class="nav-btn"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                                        <button id="next" class="nav-btn"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                                    </div>
+        
                                 </div>
                             </div>
                         </main>
@@ -78,5 +100,16 @@
 
     <script src="scripts/landing.js"></script>
     <script src="iPhone/scripts/project.js"></script>
+    <script src="iPhone/scripts/project-details.js"></script>
+    <script src="iPhone/scripts/image-modal-helper.js"></script>
+    <script>
+        function warnAndEmail() {
+        const message = "I'm currently working on a few projects. You can drop your requirements/details via email.";
+        const open = confirm(message + "\n\nOpen your email client now?");
+        if (open) {
+            window.location.href = "mailto:codealligator.csprasad@gmail.com?subject=Project%20Inquiry";
+        }
+        }
+    </script>
 </body>
 </html>
