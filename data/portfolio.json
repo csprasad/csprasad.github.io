@@ -140,7 +140,7 @@
                 "category": "Developer Tools",
                 "icon": "assets/images/Projects/DevLint/DevLint.png",
                 "rating": 4.5,
-                "screenshots": ["assets/images/Projects/DevLint/DevLint-01.png"],
+                "screenshots": ["assets/images/Projects/DevLint/DevLint-01.png", "assets/images/Projects/DevLint/DevLint-02.png"],
                 "description": "A lightweight macOS app for formatting, linting, and correcting Swift syntax.",
                 "app_store_link": "https://github.com/csprasad/DevLint",
                 "total_downloads": "10K+",
