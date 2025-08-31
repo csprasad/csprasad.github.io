@@ -133,11 +133,12 @@ p {
 }
 
 .book-call {
+    white-space: nowrap; 
     background-color: var(--button-bg);
     color: var(--button-text);
     border: none;
     padding: 10px 20px;
-    font-size: 1.1em;
+    font-size: 1em;
     cursor: pointer;
     border-radius: 100px;
     transition: background-color 0.3s;
@@ -152,7 +153,7 @@ p {
     font-size: 1.1em;
     line-height: 1.6;
     max-width: 400px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 /* Project Section (Glassy Card) */
@@ -163,9 +164,9 @@ p {
     /* border: 1px solid var(--border-dark); */
     border-radius: 20px;
     padding: 20px;
-    margin-top: 10px;
-    max-width: 75%;
-    height: 340px;
+    /* margin-top: 10px; */
+    max-width: 95%;
+    max-height: 375px;
     box-shadow: var(--shadow);
     transition: all 0.3s ease;
     overflow-y: auto;

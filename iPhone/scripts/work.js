@@ -22,8 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (mapContainer && data.experience.map_bg_image) {
                 mapContainer.style.background = `url('${data.experience.map_bg_image}') no-repeat center center`;
-                mapContainer.style.backgroundSize = "cover"; // Ensures full coverage
-                console.log("Background updated:", data.experience.map_bg_image);
+                mapContainer.style.backgroundSize = "cover"; 
             } else {
                 console.warn("Map background image not found in JSON!");
             }
