@@ -14,14 +14,15 @@
     padding-top: 3rem; /* Add padding to avoid overlap with status bar */
     padding-bottom: 2rem;
     position: relative;
-      text-decoration: none !important; /* Force remove underline */
+    text-decoration: none !important; /* Force remove underline */
   }
   
   /* Widget Styles */
   .widget {
-    background: rgba(255, 255, 255, 0.15); /* Softer blur effect */
-    backdrop-filter: blur(20px); /* Increase blur for a frosted glass effect */
-    border-radius: 1.5rem; /* More rounded like Apple’s design */
+    background: rgba(255, 255, 255, 0.15); 
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px); /* Safari specific prefix */
+    border-radius: 1.5rem; 
     padding: 1rem;
     text-align: center;
     margin-top: 1rem;
@@ -76,7 +77,7 @@
 /* iOS-style App Dock (Adjusted for Better Fit) */
 .app-dock {
   width: 95%;
-  /* max-width: 320px; */
+  max-width: 320px;
   display: flex;
   justify-content: center;
   position: absolute;
