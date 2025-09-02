@@ -1,85 +1,75 @@
-document.addEventListener("DOMContentLoaded", () => {
-    console.log("JavaScript loaded and DOM ready!");
+document.addEventListener("DOMContentLoaded", async () => {
+    try {
+        const data = await getPortfolio();
+        const BASE_URL = data.BASE_URL || ""; // use backend base URL
 
-    fetch("../data/portfolio.json") // Ensure the correct path
-        .then(response => response.json())
-        .then(data => {
-            console.log("Raw JSON response:", data);  // Debugging log
+        if (!data.experience || !data.experience.companies) {
+            console.error("No experience data found!");
+            return;
+        }
 
-            if (!data.experience || !data.experience.companies) {
-                console.error("No experience data found!");
-                return;
-            }
+        const workExperiences = data.experience.companies;
 
-            const workExperiences = data.experience.companies; // ✅ Corrected reference
+        const mapContainer = document.querySelector(".page.app-page");
+        const popup = document.getElementById("popup");
+        const popupOverlay = document.getElementById("popup-overlay");
+        const closePopup = document.querySelector(".close-popup");
 
-            console.log("Work Experiences:", workExperiences); // Debugging log
+        if (!mapContainer || !popup || !popupOverlay || !closePopup) {
+            console.error("Missing required elements");
+            return;
+        }
 
-            const mapContainer = document.querySelector(".page.app-page");
-            const popup = document.getElementById("popup");
-            const popupOverlay = document.getElementById("popup-overlay");
-            const closePopup = document.querySelector(".close-popup");
+        // Map background image
+        if (data.experience.map_bg_image) {
+            mapContainer.style.backgroundImage = `url('${BASE_URL}${data.experience.map_bg_image}')`;
+            mapContainer.style.backgroundRepeat = "no-repeat";
+            mapContainer.style.backgroundPosition = "center center";
+            mapContainer.style.backgroundSize = "cover";
+        }
 
-            if (mapContainer && data.experience.map_bg_image) {
-                mapContainer.style.background = `url('${data.experience.map_bg_image}') no-repeat center center`;
-                mapContainer.style.backgroundSize = "cover"; 
-            } else {
-                console.warn("Map background image not found in JSON!");
-            }
+        // Add markers
+        workExperiences.forEach((job, index) => {
+            const marker = document.createElement("div");
+            marker.classList.add("map-marker");
+            marker.style.top = job.position.top;
+            marker.style.left = job.position.left;
+            marker.dataset.index = index;
 
-            if (!mapContainer || !popup || !popupOverlay || !closePopup) {
-                console.error("One or more elements are missing! Check your HTML.");
-                return;
-            }
+            const markerTitle = document.createElement("div");
+            markerTitle.classList.add("marker-title");
+            markerTitle.textContent = job.company;
+            marker.appendChild(markerTitle);
 
-            // Create and add markers
-            workExperiences.forEach((job, index) => {
-                console.log("Adding marker for:", job.company); // Debugging log
+            const markerPin = document.createElement("div");
+            markerPin.classList.add("marker-pin");
+            marker.appendChild(markerPin);
 
-                const marker = document.createElement("div");
-                marker.classList.add("map-marker");
-                marker.style.top = job.position.top;
-                marker.style.left = job.position.left;
-                marker.dataset.index = index;
+            marker.addEventListener("click", () => displayPopup(job));
 
-                // 🛠️ Fix: Add missing inner elements
-                const markerTitle = document.createElement("div");
-                markerTitle.classList.add("marker-title");
-                markerTitle.textContent = job.company; // Use company name as title
-                marker.appendChild(markerTitle);
+            mapContainer.appendChild(marker);
+        });
 
-                const markerPin = document.createElement("div");
-                markerPin.classList.add("marker-pin");
-                marker.appendChild(markerPin);
+        function displayPopup(job) {
+            document.getElementById("popup-company").textContent = job.company;
+            document.getElementById("popup-role").textContent = job.role;
+            document.getElementById("popup-duration").textContent = job.duration;
+            document.getElementById("popup-responsibilities").innerHTML = job.responsibilities.map(i => `<li>${i}</li>`).join("");
+            document.getElementById("popup-projects").innerHTML = job.projects.map(i => `<li>${i}</li>`).join("");
 
-                marker.addEventListener("click", () => {
-                    console.log("Marker clicked:", job.company);
-                    displayPopup(job);
-                });
+            popup.style.display = "block";
+            popupOverlay.style.display = "block";
+        }
 
-                mapContainer.appendChild(marker);
-            });
+        function closePopupFunction() {
+            popup.style.display = "none";
+            popupOverlay.style.display = "none";
+        }
 
-            // Function to show popup
-            function displayPopup(job) {
-                document.getElementById("popup-company").textContent = job.company;
-                document.getElementById("popup-role").textContent = job.role;
-                document.getElementById("popup-duration").textContent = job.duration;
-                document.getElementById("popup-responsibilities").innerHTML = job.responsibilities.map(item => `<li>${item}</li>`).join("");
-                document.getElementById("popup-projects").innerHTML = job.projects.map(item => `<li>${item}</li>`).join("");
+        closePopup.addEventListener("click", closePopupFunction);
+        popupOverlay.addEventListener("click", closePopupFunction);
 
-                popup.style.display = "block";
-                popupOverlay.style.display = "block";
-            }
-
-            // Close popup
-            function closePopupFunction() {
-                popup.style.display = "none";
-                popupOverlay.style.display = "none";
-            }
-
-            closePopup.addEventListener("click", closePopupFunction);
-            popupOverlay.addEventListener("click", closePopupFunction);
-        })
-        .catch(error => console.error("Error loading profile data:", error));
+    } catch (err) {
+        console.error("Error loading portfolio data:", err);
+    }
 });

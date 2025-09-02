@@ -1,12 +1,12 @@
 /* Home Screen Styles */
 .home-screen {
-    background: linear-gradient(to bottom, #030509, #030a13); /* Blue-100 to Blue-200 */
+    background: linear-gradient(to bottom, #030509, #030a13);
     border: 1px solid #000000; /* Black-300 */
     border-radius: 2.5rem;
-    background-image: url('../assets/images/iPhone-15.webp');
     background-size: cover;
     background-position: center;
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Align content to the top */
