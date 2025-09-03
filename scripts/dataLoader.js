@@ -1,6 +1,6 @@
 // /js/dataLoader.js
 (function () {
-    const BASE_URL = "http://localhost:3000/";
+    const BASE_URL = "https://portfolio-backend-p1.vercel.app/";
     const URL = BASE_URL + "api/portfolio";
     const CACHE_KEY = "portfolioData";
     const CACHE_VER = "v1"; // bumps when you change schema
