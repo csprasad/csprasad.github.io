@@ -23,7 +23,7 @@ It showcases my **iOS development skills, projects, and experience** in a mobile
 ## 📸 Preview
 
 🔗 [**Visit Live Site**](https://csprasad.github.io/landing.html)
-![webpage](data/webpage.png)
+![webpage](https://portfolio-backend-p1.vercel.app/project-assets/webpage.png)
 
 ---
 

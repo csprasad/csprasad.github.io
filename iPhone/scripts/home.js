@@ -1,38 +1,42 @@
-document.addEventListener("DOMContentLoaded", function () {
-    fetch("../data/portfolio.json") // Adjusted path
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! Status: ${response.status}`);
-            }
-            return response.json();
-        })
-        .then(data => {
-            if (!data.profile) throw new Error("Profile data is missing!");
+document.addEventListener("DOMContentLoaded", async () => {
+  try {
+    const data = await getPortfolio();
+    const base = data.BASE_URL;
 
-            const profile = data.profile;
+    if (!data.profile) throw new Error("Profile data is missing!");
 
-            // Update profile picture
-            const profileImage = document.querySelector(".widget-content img");
-            if (profileImage && profile.profile_picture) {
-                profileImage.src = profile.profile_picture;
-            }
+    const profile = data.profile;
 
-            // Update name and alias
-            const nameElement = document.querySelector(".magic-text");
-            if (nameElement) {
-                nameElement.textContent = profile.name || "Username";
-            }
+    // Update profile picture
+    const profileImage = document.querySelector(".widget-content img");
+    if (profileImage && profile.profile_picture) {
+      profileImage.src = base + profile.profile_picture;
+    }
 
-            // Update intro
-            const introElement = document.querySelector(".widget-content p");
-            if (introElement) {
-                introElement.textContent = profile.intro || "Intro here";
-            }
-        })
-        .catch(error => console.error("Error loading profile data:", error));
+    // .home-screen 
+    const homeScreen = document.querySelector(".home-screen");
+    console.log(homeScreen); // Should not be null
+    if (homeScreen && profile.background_mock) {
+        homeScreen.style.backgroundImage = `url('${base}${profile.background_mock}')`;
+        homeScreen.style.backgroundSize = "cover";
+        homeScreen.style.backgroundPosition = "center";
+    }
+
+    // Update name and alias
+    const nameElement = document.querySelector(".magic-text");
+    if (nameElement) {
+      nameElement.textContent = profile.name || "Username";
+    }
+
+    // Update intro
+    const introElement = document.querySelector(".widget-content p");
+    if (introElement) {
+      introElement.textContent = profile.intro || "Intro here";
+    }
+  } catch (error) {
+    console.error("Error loading profile data:", error);
+  }
 });
-
-
 
 // Sparkeling Effect 
 let index = 0,
